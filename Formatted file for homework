@@ -1,0 +1,48 @@
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+
+\addbibresource{references.bib}
+
+\author{Omair Tariq Khan}
+\email{okhan60@gatech.edu}
+\title{Homework 2}
+
+\begin{document}
+%\lsstyle
+
+\maketitle
+\hfill \break
+\hfill \break
+
+
+\section{Answer to Question 1 - Cooking}
+
+\newpage
+
+\section{Answer to Question 2}
+ 
+\newpage
+
+\section{Answer to Question 3}
+\subsection {}
+
+\newpage
+
+\section{Answer to Question 4}
+
+
+\newpage
+
+\section{References}
+
+\printbibliography[heading=none]
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+
+\end{enumerate}
+
+\end{document}
