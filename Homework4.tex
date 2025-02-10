@@ -25,7 +25,7 @@ To explore these questions, I had three separate discussions with ChatGPT, each 
 In all of these interactions, the generative AI obviously does act as a memory. But in each case, it also seems to take on some fairly standard cognitive functions as well. In brainstorming, it acts as an external mind, allowing one’s own mind to work on less of the ideation task. In feedback, it provides something like analysis—although in ways that are similar enough to human responses that mere recall can’t be what’s going on. And in explanation, the generative AI produces understandable language for content that is already stored—as if functioning as an interpreter rather than simply a memory aid. Still, these extensions of memory-type activity can be boiled down to essentially just centralizing and improving recall functions with some more complex formatting thrown in. Even though it might seem like there is reasonableness or judgment happening at the model-level (especially when people don’t know where the model ends and humans providing output start), there is never actually any cogitation happening within this interacting cognitive system.
 
 Distributed cognition can also provide a useful framework for considering the role of generative AI in human-computer interaction. From this perspective, a user’s interaction with an AI system can be viewed as not simply tool use, but as participation in a cognitive system more generally, in which some of the cognitive work is distributed between the human and machine. Within this view, AI has been shown to contribute to increased cognitive performance through reductions of memory load, problem-solving assistance, and communication facilitation. However, it also highlights that current examples of artificial intelligence are still fundamentally limited by their dependence on prior information and human-generated data.
-\newpage
+\hfill \break
 
 \section{Answer to Question 2}
 One area where political motivations significantly shape technology design is social media content moderation, particularly regarding fact-checking and misinformation policies. I regularly encounter this issue on platforms like Facebook, Instagram, and Reddit. Meta’s recent decision to end professional fact-checking on its platforms is a prime example of how political considerations influence technological design . This move reflects a shift in how misinformation is managed, impacting what content is promoted or suppressed. Given that I use Reddit frequently, I see firsthand how political biases shape discussions, as different platforms enforce or remove content based on their moderation policies. While Reddit is often seen as a left-leaning space, its moderation strategies contrast sharply with Meta's approach, highlighting the varying political motivations behind content management.
@@ -35,25 +35,96 @@ Several key stakeholders influence this landscape. First, platform companies lik
 The political motivations behind content moderation shape technology in multiple ways. One direct impact is the algorithmic ranking of content. Platforms prioritize certain posts based on engagement and perceived trustworthiness, affecting what information users see first. When professional fact-checking was active, posts flagged as false would be demoted, reducing their reach. With the removal of this system, misinformation may spread more easily, altering public discourse. Another way motivations influence design is through user reporting mechanisms. Some platforms rely heavily on community reports to flag misinformation, shifting the responsibility from professionals to users. This creates biases, as highly engaged groups can manipulate reporting systems to suppress opposing views. Finally, interface changes, such as warning labels or pop-up fact checks, reflect ongoing political debates. Some stakeholders advocate for strong intervention, while others argue that such labels discourage free expression. These conflicts demonstrate how political forces shape technology beyond usability, influencing how people interact with information online.
 
 Understanding the role of political motivations in technology design helps reveal why platforms make certain moderation decisions. The tension between business interests, regulatory demands, and user preferences leads to constant changes in how content is managed. As someone who frequently navigates these platforms, I experience how different policies impact discussions and information visibility. Recognizing these influences allows for a more critical approach to engaging with online content.
-
-\newpage
+\hfill \break
 
 \section{Answer to Question 3}
+Paper 1: LipType: A Silent Speech Recognizer Augmented with an Independent Repair Model 
+\newline Authors: Laxmi Pandey, Ahmed Sabbir Arif
+\newline Link: https://dl.acm.org/doi/10.1145/3411764.3445565
 
+LipType is a silent speech recognition system designed to address challenges such as noisy environments, privacy concerns, and accessibility for individuals with speech disorders. The authors optimized LipNet, an existing lip-reading model, to improve speed and accuracy. They also introduced an independent repair model that corrects errors caused by poor lighting or other environmental factors. The repair model processes video input and refines the output, enhancing the system’s overall accuracy. The paper demonstrates the effectiveness of LipType by comparing it to other speech and silent speech recognizers, showing significant improvements in performance.
 
-\newpage
+Why I Find This Paper Interesting:
+I chose this paper because it aligns with the course’s emphasis on designing inclusive and accessible technologies. LipType’s focus on improving silent speech recognition for individuals with speech disorders resonates with the lesson on designing for special needs (Lesson 1.3). Additionally, the paper’s approach to optimizing an existing system rather than starting from scratch reflects the course’s discussion on iterative design and feedback cycles (Lesson 2.2). The repair model’s ability to handle environmental challenges like poor lighting also connects to the importance of robustness and error handling in HCI (Lesson 2.5).
 
-\section{Answer to Question 4}
+Connections to Course Content:
 
+Inclusive Design (Lesson 1.3): LipType directly addresses the needs of individuals with speech disorders, aligning with the course’s discussion on designing for special needs. The paper demonstrates how HCI can be used to create technologies that are accessible to diverse user groups.
 
-\newpage
+Feedback Cycles and Error Handling (Lesson 2.2): The independent repair model in LipType exemplifies the importance of feedback cycles in HCI. By correcting errors in real-time, the system ensures that users receive accurate feedback, which is crucial for usability and user satisfaction.
 
-\section{References}
+Design Principles (Lesson 2.5): LipType adheres to several design principles discussed in the course, such as simplicity (optimizing LipNet for speed and accuracy) and tolerance (handling errors caused by environmental factors). These principles ensure that the system is both effective and user-friendly.
+
+\textbf{Paper 2: ElectroRing: Subtle Pinch and Touch Detection with a Ring}
+\newline Authors: Wolf Kienzle, Eric Whitmire, Chris Rittaler, Hrvoje Benko
+\newline Link: https://dl.acm.org/doi/10.1145/3411764.3445094
+
+Summary:
+ElectroRing is a wearable ring-based input device that detects subtle finger pinches and touch gestures. Unlike traditional methods that rely on cameras or inertial measurement units (IMUs), ElectroRing uses active electrical sensing to detect touch and release events with high precision. The ring requires no additional instrumentation, making it a standalone solution for detecting fine-grained gestures. The authors built three demo applications to showcase the ring’s capabilities, demonstrating its effectiveness in real-world scenarios. The paper highlights how ElectroRing addresses the limitations of existing touch detection methods, particularly in scenarios where subtle gestures are difficult to capture.
+
+Why I Find This Paper Interesting:
+I selected this paper because it exemplifies the course’s focus on innovative input devices and interaction techniques (Lesson 1.3). ElectroRing’s ability to detect subtle gestures without additional hardware aligns with the course’s discussion on designing intuitive and efficient input methods. Additionally, the paper’s emphasis on wearable technology connects to the lesson on ubiquitous computing and wearables (Lesson 1.3). The practical applications of ElectroRing, such as in augmented reality (AR) and virtual reality (VR), also resonate with the course’s exploration of emerging technologies.
+
+Connections to Course Content:
+
+Input Devices and Interaction Techniques (Lesson 1.3): ElectroRing is a prime example of how novel input devices can enhance user interaction. Its ability to detect subtle gestures connects to the course’s discussion on designing intuitive and efficient input methods.
+
+Wearable Technology (Lesson 1.3): This paper ties into the course’s exploration of wearable devices and their role in HCI. ElectroRing’s design as a standalone, wearable solution reflects the growing trend of integrating technology into everyday accessories.
+
+Feedback and Responsiveness (Lesson 2.2): The precision of ElectroRing’s touch detection highlights the importance of providing immediate and accurate feedback in interactive systems. This aligns with the course’s emphasis on designing systems that respond seamlessly to user inputs.
+
+\hfill \break  
+
+\section{Answer to Question 4} 
+\textbf{PAPER 1: INTERNATIONAL CONFERENCE ON AUTOMOTIVE USER INTERFACES AND INTERACTIVE VEHICULAR APPLICATIONS} 
+\newline \textbf{Title}: “Talking with your Car: Design of Human-Centered Conversational AI in Autonomous Vehicles”
+\newline \textbf{Link}: https://dl.acm.org/doi/10.1145/3640792.3675713
+\newline \textbf{Authors}: Akshay Rege, Rebecca Currano, David Sirkin, Euiyoung Kim
+\newline SUMMARY:
+This paper explores the design of conversational AI systems for autonomous vehicles, focusing on how these systems can enhance the user experience. The authors propose a human-centered approach to designing AI that can engage in natural, context-aware conversations with passengers. The system is designed to handle a variety of tasks, such as providing navigation assistance, answering questions about the vehicle’s status, and even engaging in casual conversation to reduce passenger anxiety. The paper discusses the challenges of designing such systems, including ensuring privacy, managing user trust, and maintaining conversational relevance. The authors conducted a user study to evaluate the effectiveness of their design, finding that passengers appreciated the system’s ability to adapt to their needs and preferences.
+
+WHY I FIND THIS PAPER INTERESTING:
+I chose this paper because it addresses a critical aspect of autonomous vehicle design: how to make passengers feel comfortable and engaged during their journey. The idea of using conversational AI to create a more human-like interaction with the vehicle is fascinating, as it bridges the gap between technology and human emotion. This paper resonates with me because it highlights the importance of designing systems that are not only functional but also empathetic and user-friendly. It also connects to the course’s discussion on designing for usability and user experience (Lesson 1.2).
+
+CONNECTIONS TO COURSE CONTENT:
+Feedback Cycles (Lesson 2.2): The conversational AI system exemplifies the concept of feedback cycles, where the system provides timely and appropriate responses to user inputs. The AI’s ability to adapt its responses based on context and user preferences reflects a well-designed feedback loop that enhances usability.
+Mental Models (Lesson 2.1): The paper considers how passengers perceive the AI’s behavior, which ties into the concept of mental models. The AI’s responses must align with the user’s expectations to avoid confusion or frustration.
+Design Principles (Lesson 2.5): The paper demonstrates principles like discoverability (the AI’s actions should be understandable) and tolerance (the AI should handle errors gracefully). These principles ensure that the system is both effective and user-friendly.
+
+\textbf{PAPER 2: SYMPOSIUM ON VIRTUAL REALITY SOFTWARE AND TECHNOLOGY}
+\newline \textbf{Title}: “Stand Alone or Stay Together: An In-situ Experiment of Mixed-Reality Applications in Embryonic Anatomy Education”
+\newline \textbf{Authors}: Danny Schott, Matthias Kunz, Florian Heinrich, Jonas Mandel, Anne Albrecht, Rüdiger Braun-Dullaeus, Christian Hansen
+\newline \textbf{Link}: https://dl.acm.org/doi/fullHtml/10.1145/3641825.3687706
+\newline SUMMARY:
+This paper investigates the use of mixed-reality (MR) applications in medical education, specifically for teaching embryonic anatomy. The authors developed two MR environments: an Individualized Learning Environment (ILE) for solitary exploration and a Collaborative Learning Environment (CLE) for group learning. The ILE allows students to explore 3D models of the embryonic heart at their own pace, while the CLE enables real-time collaboration between students and teachers. The study evaluates the effectiveness of these environments in enhancing students’ understanding of complex anatomical concepts. The results show that both environments improve learning outcomes, but the CLE is particularly effective in promoting engagement and collaboration. The paper also discusses the challenges of integrating MR into traditional educational settings, such as ensuring accessibility and minimizing technical issues.
+
+WHY I FIND THIS PAPER INTERESTING:
+I selected this paper because it demonstrates how emerging technologies like MR can transform education, particularly in fields that require a deep understanding of complex spatial relationships. The idea of using MR to teach embryonic anatomy is innovative and aligns with the course’s focus on designing intuitive and engaging interfaces (Lesson 1.3). This paper is particularly relevant to me because it shows how technology can bridge the gap between abstract concepts and human understanding, making complex information more accessible.
+
+CONNECTIONS TO COURSE CONTENT:
+
+Direct Manipulation (Lesson 2.3): The MR environments exemplify the concept of direct manipulation, where users interact with 3D models as if they were physical objects. This approach reduces the cognitive load and makes the interaction more intuitive.
+
+Feedback and Responsiveness (Lesson 2.2): The MR systems provide immediate feedback as users manipulate the 3D models, ensuring that they understand the impact of their actions. This aligns with the course’s emphasis on designing systems that are responsive and user-friendly.
+
+\hfill \break  
+
+\section{Appendix for Q1}
 
 \printbibliography[heading=none]
 \begin{enumerate}
-    \item \textbf{Question 2}: \hfill \break
-    Leon-Mantero C., Casas-Rosal J., Maz-Machado A., Rico M (2020, January). Analysis of attitudinal components towards statistics among students from different academic degrees
+    \item \textbf{Conversation 1: Brainstorming Assistant 2}: \hfill \break
+    Me: I need help coming up with ideas for a fitness app that focuses on habit tracking and motivation. Can you suggest some features?
+
+ChatGPT: Sure! Here are some features you might consider: (goes on for ideas) 
+\item \textbf{Conversation 2: Feedback Tool}: \hfill \break Me: Here’s a paragraph I wrote. Can you give me feedback?
+
+"Fitness tracking apps often lack personalized motivation, leading users to abandon their goals. By integrating AI-driven coaching, these apps could provide tailored encouragement based on user habits."
+
+ChatGPT: Your paragraph is clear and concise, but you might expand on how AI-driven coaching works. Consider adding a concrete example: "For instance, if a user consistently misses morning workouts, the app could suggest an afternoon routine instead." This makes the idea more tangible.
+\item \textbf{Conversation 3: Concept Explanation}: \hfill \break Me: Can you explain the concept of distributed cognition in simple terms?
+
+ChatGPT: Sure! Distributed cognition is the idea that thinking isn’t just in our heads—it happens through interactions with people, tools, and the environment. For example, when pilots use checklists and speed indicators in a cockpit, they aren’t remembering everything themselves; they rely on these external aids to think and make decisions. In daily life, when you use a calendar to remember appointments, that’s also an example of distributed cognition.
      
 
 \end{enumerate}
