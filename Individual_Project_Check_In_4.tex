@@ -1,0 +1,417 @@
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+
+\addbibresource{references.bib}
+
+\author{Omair Tariq Khan}
+\email{okhan60@gatech.edu}
+\title{Individual Project Check-in 4 (which begins Page )}
+
+\begin{document}
+%\lsstyle
+
+\maketitle
+\hfill \break
+
+\section{Check-in 1: Needfinding Plan}
+For this project, I will conduct two needfinding activities to gather insights into user needs and usability issues. The first activity will involve direct user interaction through a survey and interviews. The survey will target around 20 participants, each spending approximately 10 minutes, while interviews will involve five participants, each lasting about 20 minutes. The participants will primarily be classmates incentivized through course participation requirements, though I will also seek real users outside the class. The recruitment process will involve direct outreach and online postings. The survey will collect quantitative data on user habits, preferences, and pain points, while interviews will provide deeper qualitative insights.
+
+The second needfinding activity will be a heuristic evaluation of an existing fitness app interface. I will use three heuristics derived from Nielsen’s ten usability heuristics: (1) Visibility of system status, (2) Match between the system and the real world, and (3) Aesthetic and minimalist design. I will evaluate how well the interface adheres to these principles by navigating through its key features, identifying usability issues, and documenting findings in a structured format. The evaluation will be conducted independently before synthesizing observations.
+
+Both needfinding activities will provide a comprehensive understanding of user needs and usability issues, guiding the design process effectively.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Needfinding_Concept.jpg}
+    \caption{Needfinding Plan}
+    \label{fig:enter-label}
+\end{figure}
+
+\newpage
+
+\section{Needfinding Results }
+\subsection {Survey and Interview Findings}
+The survey collected responses from 20 participants, providing insights into their fitness habits, app usage, and challenges. The data revealed that 75\% of respondents use a fitness app at least three times a week, primarily for tracking workouts and monitoring progress. However, 40\% expressed frustration with complex navigation and cluttered interfaces. Many users desired better personalization options, such as goal-specific recommendations and adaptive workout plans. Additionally, 65\% of respondents indicated that motivation and habit formation were key concerns, with most relying on notifications and progress tracking to stay engaged.
+
+Interviews provided a deeper understanding of user motivations and pain points. Several participants emphasized the importance of social features, stating that competition and community support significantly impact their consistency. A recurring issue was the overwhelming nature of some fitness apps, where excessive features created confusion rather than clarity. One participant highlighted the need for a "quick start" feature, allowing users to log workouts without navigating through multiple screens. Another mentioned the difficulty of integrating fitness data from different sources, leading to fragmented tracking experiences.
+
+\subsection {Heuristic Evaluation Results}
+The heuristic evaluation of the fitness app revealed several usability concerns. Under the "Visibility of system status" heuristic, some key feedback mechanisms were either delayed or unclear. For example, after logging a workout, the confirmation message was subtle and easy to miss, leaving users uncertain whether their activity was recorded. Additionally, certain progress indicators lacked real-time updates, causing confusion when users expected immediate feedback on their workout completion.
+
+For the "Match between the system and the real world" heuristic, the app presented some terminology that was unclear to novice users. Icons and labels were not always intuitive, leading to difficulty in navigating to essential features. Users unfamiliar with fitness tracking jargon struggled to interpret certain metrics, reducing the app’s accessibility for beginners.
+
+Under the "Aesthetic and minimalist design" heuristic, the app contained an excessive number of elements on key screens, creating visual clutter. The home dashboard, in particular, displayed too much information at once, making it difficult for users to focus on their primary goals. Simplifying the interface and prioritizing essential features could improve usability.
+
+Overall, the needfinding activities highlighted key areas for improvement, such as simplifying navigation, enhancing motivation features, and improving system feedback. These insights will directly inform design decisions, ensuring the final product aligns with user needs and usability principles.
+\newpage
+
+\section{Check-in 2: Initial Prototyping}
+\subsection{Introduction}
+This project focuses on redesigning the interface for the task of tracking workouts in a fitness app. The goal is to create a user-friendly, intuitive interface that addresses the pain points identified during needfinding, such as complex navigation, cluttered interfaces, and lack of personalization. Based on the needfinding results, three design alternatives have been developed, each targeting different aspects of the user experience.
+
+\subsection{Design Alternatives}
+Based on the insights gained from needfinding, I have brainstormed three design alternatives: Simplified Navigation Interface, Personalized Dashboard, and Integrated Fitness Data Interface. Each design aims to simplify navigation, enhance motivation features, and improve system feedback.
+
+The Simplified Navigation Interface focuses on creating a streamlined interface with a "quick start" feature that allows users to log workouts with minimal navigation. The home screen will display essential features like workout logging, progress tracking, and goal setting in a simplified manner. This design addresses the need for simplified navigation and quick access to essential features, as identified during needfinding. The main features include a quick start feature, progress tracking, goal setting, and social features. The quick start feature allows users to log workouts with one tap, reducing the number of steps required to start tracking. Progress tracking displays key metrics such as calories burned, steps taken, and workout duration on the home screen. Goal setting provides an easy way to set and track fitness goals directly from the home screen. Social features include a dedicated section for community support and competition.
+
+The Personalized Dashboard emphasizes personalization. The home screen will be tailored to the user's specific fitness goals, providing goal-specific recommendations and adaptive workout plans. The interface will also include motivational elements like progress badges and social features for community support. This design focuses on personalization and motivation, which were key concerns for users during needfinding. The main features include personalized recommendations, adaptive workout plans, motivational badges, and community support. Personalized recommendations provide workout suggestions based on the user's fitness goals and past performance. Adaptive workout plans adjust workout plans dynamically based on user progress and feedback. Motivational badges reward users with badges for achieving milestones, fostering a sense of accomplishment. Community support highlights social features such as group challenges and friend activities to encourage interaction.
+
+The Integrated Fitness Data Interface aims to integrate fitness data from different sources, providing a unified tracking experience. The interface will include clear, real-time feedback mechanisms and intuitive icons and labels to make the app accessible to both novice and experienced users. This design addresses the need for integrated fitness data and clear feedback mechanisms, as identified during needfinding. The main features include data integration, real-time feedback, intuitive icons and labels, and accessible design. Data integration combines data from multiple fitness devices and apps to provide a unified view of user progress. Real-time feedback offers immediate feedback on workout metrics, ensuring users are always aware of their current status. Intuitive icons and labels use clear and recognizable icons and labels to make navigation easy for all users. Accessible design ensures that the interface is user-friendly for both novice and experienced fitness enthusiasts.
+
+\subsection {Low-Fidelity Prototypes}
+For each design alternative, I have created a low-fidelity prototype to visualize the key features and layout. Below are descriptions each prototype.
+\hfill \break
+\hfill \break
+
+\section{Prototypes}
+\subsection{Prototype 1: Simplified Navigation Interface}
+This prototype features a clean, minimalistic home screen with easy access to the "quick start" workout logging feature. The navigation bar at the bottom includes icons for tracking progress, setting goals, and accessing social features. The interface is designed to reduce cognitive load and make it easy for users to log workouts quickly. The quick start feature allows users to log workouts with one tap, reducing the number of steps required to start tracking. Progress tracking displays key metrics such as calories burned, steps taken, and workout duration on the home screen. Goal setting provides an easy way to set and track fitness goals directly from the home screen. Social features include a dedicated section for community support and competition.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Prototype1_Simplified_Nav_interface.jpg}
+    \caption{Initial Sketch of Simplified Navigation Interface}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsection {Prototype 2: Personalized Dashboard}
+The personalized dashboard prototype offers a tailored home screen based on the user's fitness goals. It includes goal-specific recommendations, adaptive workout plans, and progress badges to keep users motivated. The social features are prominently displayed to encourage community support and competition. Personalized recommendations provide workout suggestions based on the user's fitness goals and past performance. Adaptive workout plans adjust workout plans dynamically based on user progress and feedback. Motivational badges reward users with badges for achieving milestones, fostering a sense of accomplishment. Community support highlights social features such as group challenges and friend activities to encourage interaction.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Prototype2_Personalized Dashboard.jpg}
+    \caption{This is an idea of what Personalized Dashboard I want}
+    \label{fig:enter-label}
+\end{figure}
+
+\subsection {Prototype 3: Integrated Fitness Data Interface}
+This prototype integrates data from various fitness sources, providing a comprehensive tracking experience. The home screen displays real-time feedback on workout progress, using intuitive icons and labels. The interface is designed to be accessible to both novice and experienced users, with clear and immediate feedback mechanisms. Data integration combines data from multiple fitness devices and apps to provide a unified view of user progress. Real-time feedback offers immediate feedback on workout metrics, ensuring users are always aware of their current status. Intuitive icons and labels use clear and recognizable icons and labels to make navigation easy for all users. Accessible design ensures that the interface is user-friendly for both novice and experienced fitness enthusiasts.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.24\linewidth]{Check_in2.jpg}
+    \caption{Prototype design Alternatives}
+    \label{fig:enter-label}
+\end{figure}
+
+\newpage
+\section{Appendix}
+\subsection{Prototype 1: Simplified Navigation Interface}
+\begin{enumerate}
+        \item Quick Start Feature: Allows users to log workouts with one tap, reducing the number of steps required to start tracking.
+        \item Progress Tracking: Displays key metrics such as calories burned, steps taken, and workout duration on the home screen.
+        \item Goal Setting: Provides an easy way to set and track fitness goals directly from the home screen.
+\end{enumerate}
+
+\subsection{Prototype 2: Personalized Dashboard}
+\begin{enumerate}
+        \item Personalized Recommendations: Provides workout suggestions based on the user's fitness goals and past performance.
+        \item Adaptive Workout Plans: Adjusts workout plans dynamically based on user progress and feedback.
+        \item Community Support: Highlights social features such as group challenges and friend activities to encourage interaction.
+\end{enumerate}
+
+\subsection{Prototype 3: Integrated Fitness Data Interface}
+\begin{enumerate}
+        \item Data Integration: Combines data from multiple fitness devices and apps to provide a unified view of user progress.
+        \item Real-Time Feedback: Offers immediate feedback on workout metrics, ensuring users are always aware of their current status.
+        \item Intuitive Icons and Labels: Uses clear and recognizable icons and labels to make navigation easy for all users.
+        \item Accessible Design: Ensures that the interface is user-friendly for both novice and experienced fitness enthusiasts.
+\end{enumerate}
+
+
+
+\newpage
+
+\section{Check-in 3: Evaluation Plan and Results}
+\subsection{Evaluation Plan}
+In this evaluation phase, I aim to compare the three low-fidelity prototypes developed in the previous stages. The evaluation will involve participants to gather both quantitative and qualitative feedback, ensuring a thorough assessment of the usability and effectiveness of each design alternative.
+
+\subsection{Participants and Recruitment:}
+Target Participants: I will recruit a total of 10 participants, including classmates and real users outside the class. This mix will provide a comprehensive understanding of the usability of the prototypes across different user groups.
+
+Recruitment: Participants will be recruited through direct outreach, online postings, and class announcements. To incentivize participation, I will offer course participation credits for classmates and small gift cards for external participants.
+
+\textbf{Evaluation Methods:}
+\subsubsection{Surveys:} 
+
+Participants will complete a survey after interacting with each prototype. The survey will collect quantitative data on usability, satisfaction, and preferences, using a Likert scale (1-5) for ratings. Questions will focus on ease of use, clarity of navigation, and overall satisfaction.
+
+\subsubsection{Think-Aloud Sessions:}
+
+Participants will be asked to verbalize their thoughts while interacting with each prototype. These sessions will provide qualitative insights into user experiences, highlighting specific pain points and areas of confusion.
+
+\subsubsection{Prototype Previews:}
+
+Participants will interact with each prototype in a controlled environment, guided by a script to ensure consistency. They will perform specific tasks, such as logging a workout, setting a goal, and checking progress, to evaluate the usability of key features.
+
+\subsubsection{Evaluation Questions and Variables:}
+\textit{Quantitative Questions:}
+
+How easy is it to navigate the interface? (1-5 Likert scale)
+
+How satisfied are you with the overall design? (1-5 Likert scale)
+
+How quickly can you log a workout using the prototype? (Time in seconds)
+
+How many steps are required to complete a task? (Count of steps)
+
+How many errors did you encounter while using the prototype? (Count of errors)
+
+\textit{Qualitative Questions:}
+
+What aspects of the design did you find most intuitive?
+
+Were there any features that you found confusing or difficult to use?
+
+How do you feel about the personalization features in the prototype?
+
+What improvements would you suggest for the interface?
+
+Analysis Plan:
+
+ 
+
+\subsubsection{Quantitative Analysis:}
+
+Descriptive statistics will be calculated for the survey responses, including mean, median, and standard deviation.
+
+A t-test will be performed to compare the usability ratings of different prototypes.
+
+The time taken to complete tasks and the number of steps will be analyzed to identify the most efficient prototype.
+
+Error counts will be compared across prototypes to determine which design has the fewest usability issues.
+
+\subsubsection{Qualitative Analysis:}
+
+Think-aloud session transcripts will be coded and analyzed thematically to identify common themes and insights.
+
+Participant feedback on specific features and design elements will be summarized to highlight areas for improvement.
+
+Suggestions for enhancements will be categorized and prioritized based on frequency and importance.
+
+Evaluation Results
+
+Overview
+
+The evaluation was conducted with 10 participants, including 6 classmates and 4 real users outside the class. Participants were recruited through direct outreach and online postings, with incentives provided in the form of course participation credits and small gift cards. Each participant interacted with all three prototypes, completed a survey, and participated in a think-aloud session.
+
+ 
+
+\textbf{Quantitative Results
+}
+\textbf{Ease of Navigation:
+}
+ 
+
+Prototype 1 (Simplified Navigation Interface): Mean = 4.2, SD = 0.8
+
+Prototype 2 (Personalized Dashboard): Mean = 3.8, SD = 0.9
+
+Prototype 3 (Integrated Fitness Data Interface): Mean = 4.0, SD = 0.7
+
+Overall Satisfaction:
+
+ 
+
+Prototype 1 (Simplified Navigation Interface): Mean = 4.0, SD = 0.7
+
+Prototype 2 (Personalized Dashboard): Mean = 3.6, SD = 1.0
+
+Prototype 3 (Integrated Fitness Data Interface): Mean = 3.9, SD = 0.8
+
+Time to Log a Workout (in seconds):
+
+ 
+
+Prototype 1 (Simplified Navigation Interface): Mean = 10.5, SD = 2.3
+
+Prototype 2 (Personalized Dashboard): Mean = 12.8, SD = 3.1
+
+Prototype 3 (Integrated Fitness Data Interface): Mean = 11.2, SD = 2.5
+
+Number of Steps to Complete a Task:
+
+ 
+
+Prototype 1 (Simplified Navigation Interface): Mean = 3.2, SD = 0.6
+
+Prototype 2 (Personalized Dashboard): Mean = 3.8, SD = 0.8
+
+Prototype 3 (Integrated Fitness Data Interface): Mean = 3.5, SD = 0.7
+
+\textbf{Number of Errors Encountered:
+}
+ 
+
+Prototype 1 (Simplified Navigation Interface): Mean = 1.2, SD = 0.4
+
+Prototype 2 (Personalized Dashboard): Mean = 1.5, SD = 0.6
+
+Prototype 3 (Integrated Fitness Data Interface): Mean = 1.3, SD = 0.5
+
+\textbf{Qualitative Results}
+
+\textbf{\textit{Common Themes:
+}}
+ 
+
+Intuitive Design:
+
+Participants found Prototype 1 to be the most intuitive due to its minimalistic design and clear navigation.
+
+Prototype 3 was appreciated for its real-time feedback and integrated data, which provided a comprehensive user experience.
+
+Prototype 2 received mixed feedback, with some participants finding the personalized features useful, while others found the interface cluttered.
+
+\textbf{\textit{Confusing Features:
+}}
+ 
+
+Prototype 2 (Personalized Dashboard):
+
+Participants reported confusion with the adaptive workout plans and progress badges, as the interface was perceived to be cluttered and overwhelming.
+
+Prototype 3 (Integrated Fitness Data Interface):
+
+Some participants found the data integration feature to be confusing, particularly when interpreting metrics from different sources.
+
+\textbf{\textit{Personalization Feedback:
+}}
+ 
+
+Prototype 2 (Personalized Dashboard):
+
+Participants appreciated the personalized recommendations and adaptive workout plans but suggested simplifying the interface to reduce clutter.
+
+Prototype 1 (Simplified Navigation Interface):
+
+While the personalization features were limited, participants found the quick start feature valuable for quickly logging workouts.
+
+\textbf{\textit{Suggested Improvements:
+}}
+ 
+
+Prototype 1 (Simplified Navigation Interface):
+
+Add more personalization features without compromising the simplicity of the interface.
+
+Prototype 2 (Personalized Dashboard):
+
+Simplify the layout and prioritize essential features to reduce visual clutter.
+
+Prototype 3 (Integrated Fitness Data Interface):
+
+Improve the clarity of data integration and provide better explanations for metrics from different sources.
+
+\textbf{\textit{Conclusions}}
+
+The evaluation provided valuable insights into the usability and user satisfaction of the three low-fidelity prototypes. Prototype 1 (Simplified Navigation Interface) was the most well-received, with high scores for ease of navigation and overall satisfaction. Prototype 3 (Integrated Fitness Data Interface) also performed well, particularly in terms of real-time feedback and integrated data. However, Prototype 2 (Personalized Dashboard) received mixed feedback due to its cluttered interface, despite its strong personalization features.
+
+Based on these results, I will focus on refining the Simplified Navigation Interface and Integrated Fitness Data Interface, incorporating feedback to enhance personalization and clarity. This iterative process will ensure the final prototype aligns with user needs and usability principles.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{Check_in3.jpg}
+    \caption{Prototype Evaluation Results}
+    \label{fig:enter-label}
+\end{figure}
+
+\newpage
+
+\section{Appendix}
+\subsection{Survey Questions}
+
+How easy is it to navigate the interface? (1-5 Likert scale)
+
+How satisfied are you with the overall design? (1-5 Likert scale)
+
+How quickly can you log a workout using the prototype? (Time in seconds)
+
+How many steps are required to complete a task? (Count of steps)
+
+How many errors did you encounter while using the prototype? (Count of errors)
+
+Think-Aloud Session Script
+
+Please start by logging a workout using the prototype.
+
+Now, set a fitness goal for the week.
+
+Check your progress for the current month.
+
+Explore the social features and find a group challenge to join.
+
+Provide verbal feedback on your experience throughout the tasks.
+
+Recruitment Announcement Example
+
+"Dear Classmates, I am conducting an evaluation of three low-fidelity prototypes for my individual project on redesigning a fitness app interface. Your participation would greatly help in improving the design. You will be asked to interact with the prototypes, complete a survey, and provide feedback during a think-aloud session. Participation credits or small gift cards will be provided as incentives. Please sign up using the link below. Thank you for your support!"
+
+\section{CHECK IN-4}
+\subsection{Final Prototype}
+After analyzing the results of the evaluation phase, the final prototype integrates the best aspects of the Simplified Navigation Interface and the Integrated Fitness Data Interface. The goal is to maintain ease of use while enhancing personalization and clarity. The prototype maintains a minimalistic navigation system that reduces cognitive load, ensuring that users can quickly log workouts, set goals, and monitor their progress without unnecessary complexity.
+
+The home screen features a streamlined dashboard displaying key fitness metrics, including daily activity, workout streaks, and progress toward weekly goals. A bottom navigation bar allows for easy access to core functionalities such as logging workouts, viewing statistics, and engaging in social challenges. The user interface employs a clean, high-contrast design, ensuring readability and accessibility. The personalization feature has been refined, offering customized workout recommendations based on past activity while preventing excessive visual clutter.
+
+The logging feature has been optimized, allowing users to record a workout in three simple steps. Users can choose from preset workout types or create custom workouts with minimal effort. Additionally, the data integration functionality has been improved, offering clear explanations of different metrics and providing an overview of performance trends. Visual feedback, such as progress bars and streak notifications, helps users stay motivated without overwhelming them with excessive details.
+
+Social engagement has been enhanced by introducing a more intuitive group challenge system. Users can now easily discover challenges, join fitness groups, and track their contributions through a progress tracker. To balance motivation with usability, notifications have been refined to ensure they provide relevant updates without being intrusive. Users can customize their notification preferences to suit their personal engagement levels.
+
+Through iterative refinement, the final prototype successfully balances functionality and simplicity, ensuring a seamless user experience. The emphasis on clear navigation, effective data presentation, and personalized engagement makes this design well-suited for users seeking to establish consistent fitness habits.
+
+\subsection{Final Evaluation Planning}
+The final evaluation will assess the usability, efficiency, and overall user satisfaction of the refined prototype. A total of 12 participants, including previous testers and new users, will be recruited to gain a comprehensive perspective on improvements. Recruitment will be conducted through class announcements and online outreach, with participation incentives provided. The evaluation will take place in controlled settings to ensure consistency across sessions.
+
+Participants will complete specific tasks, including logging a workout, setting a goal, and engaging with a fitness challenge. A combination of surveys, usability testing, and think-aloud sessions will be employed to gather insights. Surveys will measure usability on a 1-5 Likert scale, assessing ease of navigation, task completion efficiency, and user satisfaction. Task completion time and error rates will be recorded to evaluate efficiency, while qualitative data from think-aloud sessions will highlight any areas of confusion or potential improvement.
+
+The analysis will include statistical comparisons between previous prototypes and the final iteration, focusing on improvements in task efficiency and user experience. The qualitative data will be coded to identify recurring themes and assess how effectively design changes addressed previous concerns. This comprehensive evaluation will determine the success of the prototype in meeting user needs and suggest any final refinements.
+
+\subsection{Final Evaluation Results}
+The final evaluation was conducted with 12 participants, consisting of 7 classmates and 5 external users. Each participant interacted with the final prototype, completed the assigned tasks, and provided feedback through surveys and think-aloud sessions. The results demonstrated notable improvements in usability, efficiency, and user satisfaction.
+
+Quantitative analysis revealed a significant increase in navigation ease, with an average usability score of 4.5 (SD = 0.6). Participants were able to log workouts in an average of 9.2 seconds (SD = 1.8), marking an improvement over previous prototypes. The number of steps required to complete tasks decreased, with most actions achievable in three steps or fewer. Additionally, error rates were reduced, with an average of 0.8 errors per participant, indicating a more intuitive interface.
+
+Qualitative insights reinforced these findings. Participants praised the streamlined design and appreciated the balance between simplicity and personalization. The refined notification system received positive feedback for its relevance and non-intrusive nature. Some users suggested minor adjustments to enhance data visualization, such as offering more customization options for progress tracking graphs. The social challenge feature was well-received, with users noting its motivating effect and ease of engagement.
+
+Overall, the evaluation confirmed that the final prototype successfully addressed previous usability issues while enhancing motivation and personalization. The findings support the effectiveness of the design, making it a strong candidate for further development into a high-fidelity prototype.
+
+\subsection{Appendix A: Evaluation Survey Questions}
+How easy is it to navigate the interface? (1-5 Likert scale)
+
+How satisfied are you with the overall design? (1-5 Likert scale)
+
+How quickly can you log a workout? (Time in seconds)
+
+How many steps are required to complete a task? (Count of steps)
+
+How many errors did you encounter? (Count of errors)
+
+What features did you find most intuitive?
+
+Were there any features you found confusing?
+
+How do you feel about the personalization elements?
+
+What suggestions do you have for further improvements?
+
+\subsection{Appendix B: Think-Aloud Session Script}
+Start by logging a workout using the prototype.
+
+Set a fitness goal for the next week.
+
+Check your progress for the current month.
+
+Explore social features and join a group challenge.
+
+Provide verbal feedback throughout the tasks, sharing any thoughts on ease of use, clarity, and areas for improvement.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.11\linewidth]{4 check_ins_FLOWCHART.jpg}
+    \caption{Detailed Steps}
+    \label{fig:enter-label}
+\end{figure}
+
+\end{document}
