@@ -1,0 +1,205 @@
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+
+\addbibresource{references.bib}
+
+\author{Omair Tariq Khan, Danyal Ahmed, Atul Dhingra, Alice Maria Giani, Varun Basavaraj Kiragi}
+\email{okhan60@gatech.edu, {other emails}}
+\title{Team Project Check-in 1}
+
+\begin{document}
+%\lsstyle
+
+\maketitle
+\hfill \break
+\hfill \break
+
+\section{Introduction}
+The Workday job application system is widely used by companies, yet it is often criticized for being unintuitive, frustrating, and cumbersome for job seekers. Our project aims to reimagine and improve the Workday job application experience, making it more user-friendly, efficient, and responsive to the needs of applicants. The current system presents multiple pain points, including difficulties in saving progress, repetitive data entry, poor navigation, and a lack of transparency regarding application status.
+
+Our goal is to redesign the job application process to be more seamless and intuitive. Job seekers should be able to easily apply for positions, track their progress, and receive relevant updates without unnecessary complexity. Many applicants, particularly those applying to multiple positions, experience frustration due to redundancies in form-filling and unclear user flows. Our project seeks to address these issues by identifying key user pain points, analyzing existing solutions, and designing a system that prioritizes efficiency and user satisfaction.
+
+Through needfinding, we will gather insights from real users who have applied for jobs via Workday. We will examine their experiences, identify common frustrations, and use these insights to guide our design improvements. 
+
+\newpage
+
+\section{Needfinding Plan}
+\subsection {User Interviews}
+One of the most effective ways to gather firsthand insights is through direct user interviews. Our goal is to interview at least five individuals who have applied for jobs through Workday. These participants will be recruited through personal networks, online communities, and classmates who have used Workday for job applications. We will conduct 20-minute semi-structured interviews, asking participants about their experiences, challenges, and desired improvements.
+
+Our questions will focus on:
+\begin{itemize}
+    \item The overall ease or difficulty of using Workday for job applications
+    \item The most frustrating aspects of the process
+    \item Any workarounds they have developed to navigate the system
+    \item Features they wish existed to improve their experience
+\end{itemize}
+
+Potential biases in this method include self-selection bias (since only individuals willing to be interviewed will participate) and recall bias (participants may forget specific details). To mitigate these biases, we will ensure diversity in our participant pool and encourage detailed responses by asking follow-up questions.
+\hfill \break
+
+\subsection {Online Survey}
+To complement our interviews, we will deploy an online survey targeting approximately 20 participants. The survey will gather quantitative and qualitative data about job application experiences across various platforms, with a specific focus on Workday.
+The survey will include a mix of multiple-choice and open-ended questions covering:
+\begin{itemize}
+    \item Frequency of job applications
+    \item Platform usability ratings
+    \item Specific pain points in application processes
+    \item Demographic information to contextualize responses
+\end{itemize}
+
+Potential biases in this method include self-reporting bias in interviews and surveys, and Potential interviewer influence. 
+
+\hfill \break
+\subsection{Heuristic Evaluation of Existing Workday Interface}
+In addition to user feedback, we will conduct a heuristic evaluation of Workday’s job application system. Using usability heuristics such as Jakob Nielsen’s ten usability principles, we will systematically analyze the interface to identify usability issues. Three team members will independently evaluate the system and then compare findings to reduce individual bias.
+
+The heuristics we will focus on include:
+\begin{itemize}
+    \item Visibility of system status (Are users informed about the progress of their application?)
+    \item Match between system and real-world expectations (Does Workday use familiar language and workflows?)
+    \item User control and freedom (Can users easily correct mistakes or navigate backward?)
+    \item Consistency and standards (Are interactions intuitive and consistent?)
+    \item Error prevention (Does Workday prevent common mistakes, such as duplicate applications?)
+\end{itemize}
+A potential bias in heuristic evaluation is subjectivity, as different evaluators may perceive issues differently. To counter this, we will discuss findings collectively and highlight only those issues that multiple evaluators agree on.
+
+\hfill \break
+\newpage
+\section{Needfinding Results }
+
+\newpage
+
+\section{Appendix}
+\subsection{Appendix A: Needfinding Plan}
+\subsubsection{Research Approach}
+Our needfinding strategy is designed to comprehensively understand the job application experience through three complementary research methods:
+
+\textbf{1. User Interviews}
+\begin{itemize}
+\item Target Participants: 5 individuals across different career stages
+\item Duration: 20 minutes per interview
+\item Focus Areas: Emotional experiences during job applications, Specific challenges in online application processes, Desired features and improvements
+\end{itemize}
+\hfill \break
+\hfill \break
+\textbf{2. Online Survey}
+Introduction for Survey Participants:
+Thank you for participating in our survey! We are conducting research on job application experiences, specifically focusing on Workday. Your responses will help us identify common frustrations and potential improvements. The survey should take about 10 minutes to complete.
+
+\textbf{Demographics \& Background}
+
+1. HOW FREQUENTLY DO YOU APPLY FOR JOBS?
+
+A few times a year
+
+Once a month
+
+A few times a month
+
+Frequently (weekly or more)
+
+2. HAVE YOU EVER USED WORKDAY TO APPLY FOR A JOB?
+
+Yes
+
+No (If no, survey ends here)
+
+3. WHAT TYPE OF JOB(S) HAVE YOU APPLIED FOR USING WORKDAY? (CHECK ALL THAT APPLY)
+
+Entry-level
+
+Mid-level
+
+Senior-level
+
+Internship
+
+\textbf{Application Experience}
+
+4. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE APPLYING THROUGH WORKDAY?
+
+Very Satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very Dissatisfied
+
+5. WHAT SPECIFIC ASPECTS OF WORKDAY’S APPLICATION PROCESS DO YOU FIND FRUSTRATING? (SELECT ALL THAT APPLY)
+
+Re-entering résumé information manually
+
+Poor navigation (hard to go back/edit)
+
+Unclear application status updates
+
+Slow or unresponsive interface
+
+Login/session expiration issues
+
+6. HAVE YOU EVER ABANDONED A JOB APPLICATION BECAUSE OF WORKDAY’S COMPLEXITY?
+
+Yes
+
+No
+
+7. WHAT FEATURES WOULD IMPROVE YOUR EXPERIENCE? (SELECT ALL THAT APPLY)
+
+Auto-filling application from résumé
+
+Clearer status updates on applications
+
+More mobile-friendly interface
+
+Better navigation and editing options
+
+\textbf{Additional Comments
+}
+
+8. IF YOU COULD CHANGE ONE THING ABOUT WORKDAY’S APPLICATION PROCESS, WHAT WOULD IT BE?
+
+\hfill \break
+\hfill \break
+\textbf{3. Heuristic Evaluation}
+
+\begin{itemize}
+\item Methodology: Systematic review of Workday interface
+\item Evaluation Criteria:
+
+Visibility of system status
+
+User control and freedom
+
+Consistency and standards
+
+Match between system and real-world expectations 
+
+Error prevention 
+
+\end{itemize}
+\hfill \break
+\hfill \break
+
+
+\textbf{Bias Mitigation Strategy}
+
+Cross-validation through multiple research methods
+
+Diverse participant recruitment
+
+Transparent documentation of potential methodological limitations
+
+\newpage
+
+\newpage
+
+
+
+
+\end{document}
