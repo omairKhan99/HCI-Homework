@@ -6,7 +6,7 @@
 \addbibresource{references.bib}
 
 \author{Omair Tariq Khan, Danyal Ahmed, Atul Dhingra, Alice Maria Giani, Varun Basavaraj Kiragi}
-\email{okhan60@gatech.edu, {other emails}}
+\email{okhan60@gatech.edu, danyal@gatech.edu, adhingra43@gatech.edu , agiani3@gatech.edu, vkiragi3@gatech.edu}
 \title{Team Project Check-in 1}
 
 \begin{document}
@@ -17,7 +17,11 @@
 \hfill \break
 
 \section{Introduction}
-The Workday job application system is widely used by companies, yet it is often criticized for being unintuitive, frustrating, and cumbersome for job seekers. Our project aims to reimagine and improve the Workday job application experience, making it more user-friendly, efficient, and responsive to the needs of applicants. The current system presents multiple pain points, including difficulties in saving progress, repetitive data entry, poor navigation, and a lack of transparency regarding application status.
+In today's rapidly evolving job market, the process of searching and applying for job opportunities has become increasingly complex and digitalized. Job seekers now routinely utilize online job portals, professional networking platforms, social media, and dedicated recruitment applications to identify potential career opportunities. This shift has increased accessibility and enabled individuals to explore a broader range of job options irrespective of geographical limitations. However, this digitalization has also introduced new complexities, with job seekers needing to monitor and apply through several different platforms, craft tailored digital resumes and profiles, and navigate algorithm-driven job recommendation systems.
+
+Additionally, given the competitive nature of the contemporary job market, job seekers need to differentiate themselves from the other numerous applicants. Online platforms often involve automated screening processes that prioritize specific keywords, qualifications, and experiences, making it essential for candidates to understand these underlying selection mechanisms to maximize their visibility and chances of being shortlisted. Furthermore, the prevalence of virtual interviews and remote hiring practices has become increasingly common, requiring job seekers to develop additional competencies in digital communication and online presentation skills.
+
+Among this extensive landscape of digital employment platforms aimed to streamline recruitment processes and simplify job applications and candidates selection, one popular app is Workday. Workday is a cloud-based software designed to integrate human resources and financial management processes, making it popular across several industries and widely used by companies. The app allows users to explore job opportunities, track multiple job applications, and manage their career data using a single app thanks to its comprehensive integration capabilities. Additionally, Workday ensures real-time updates and secure handling of sensitive data and personal information through advanced encryption and compliance with privacy standards. Not withstanding its positive features, Workday is often criticized for being counterintuitive, frustrating, and cumbersome for job seekers. Our project aims to reimagine and improve the Workday job application experience, making it more user-friendly, efficient, and responsive to the needs of applicants. The current system presents multiple pain points, including difficulties in saving progress, repetitive data entry, poor navigation, and a lack of transparency regarding application status.
 
 Our goal is to redesign the job application process to be more seamless and intuitive. Job seekers should be able to easily apply for positions, track their progress, and receive relevant updates without unnecessary complexity. Many applicants, particularly those applying to multiple positions, experience frustration due to redundancies in form-filling and unclear user flows. Our project seeks to address these issues by identifying key user pain points, analyzing existing solutions, and designing a system that prioritizes efficiency and user satisfaction.
 
@@ -122,25 +126,45 @@ Our needfinding strategy is designed to comprehensively understand the job appli
 Introduction for Survey Participants:
 Thank you for participating in our survey! We are conducting research on job application experiences, specifically focusing on Workday. Your responses will help us identify common frustrations and potential improvements. The survey should take about 10 minutes to complete.
 
-\textbf{Demographics \& Background}
+\underline{\textbf{Demographics \& Background}}
 
-1. HOW FREQUENTLY DO YOU APPLY FOR JOBS?
+\textbf{1. SELECT YOUR AGE:}
 
-A few times a year
+18-29
 
-Once a month
+30-39
 
-A few times a month
+40-49
 
-Frequently (weekly or more)
+50-64
 
-2. HAVE YOU EVER USED WORKDAY TO APPLY FOR A JOB?
+65+
 
-Yes
+\hfill \break
 
-No (If no, survey ends here)
+\textbf{2. WHAT IS YOUR CURRENT EMPLOYMENT STATUS?}
 
-3. WHAT TYPE OF JOB(S) HAVE YOU APPLIED FOR USING WORKDAY? (CHECK ALL THAT APPLY)
+Employed full-time
+
+Employed part-time
+
+Unemployed (seeking employment)
+
+Unemployed (not seeking employment)
+
+Student (seeking employment)
+
+Student (not seeking employment)
+
+Retired
+
+
+\underline{\textbf{Usage  }}
+
+\textbf{3. WHAT TYPE OF JOB(S) HAVE YOU APPLIED TO USING WORKDAY APP? (CHECK ALL THAT APPLY)
+}
+
+Internship
 
 Entry-level
 
@@ -148,13 +172,35 @@ Mid-level
 
 Senior-level
 
-Internship
+Executive roles \\
 
-\textbf{Application Experience}
 
-4. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE APPLYING THROUGH WORKDAY?
 
-Very Satisfied
+\textbf{4. WHEN SEARCHING FOR A JOB, HOW OFTEN DO YOU USE WORKDAY APP FOR JOB SEARCH AND APPLICATIONS?
+}
+
+Several times a day
+
+Daily
+
+More than 4 time per week
+
+At least 2 times per week
+
+Weekly
+
+Monthly
+
+Rarely
+
+Never			
+\\
+
+\underline{\textbf{Application Experience  }}
+
+\textbf{5. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE OF SEARCHING FOR JOBS  USING WORKDAY APP?}
+
+Very satisfied
 
 Satisfied
 
@@ -162,41 +208,122 @@ Neutral
 
 Dissatisfied
 
-Very Dissatisfied
+Very dissatisfied \\
 
-5. WHAT SPECIFIC ASPECTS OF WORKDAY’S APPLICATION PROCESS DO YOU FIND FRUSTRATING? (SELECT ALL THAT APPLY)
 
-Re-entering résumé information manually
 
-Poor navigation (hard to go back/edit)
+\textbf{6. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE OF APPLYING TO JOBS THROUGH WORKDAY?}
 
-Unclear application status updates
+Very satisfied
 
-Slow or unresponsive interface
+Satisfied
 
-Login/session expiration issues
+Neutral
 
-6. HAVE YOU EVER ABANDONED A JOB APPLICATION BECAUSE OF WORKDAY’S COMPLEXITY?
+Dissatisfied
 
-Yes
+Very dissatisfied \\
 
-No
+\textbf{7. WHAT FEATURES OF WORKDAY DO YOU USE FOR JOB SEARCHES AND APPLICATIONS? (SELECT ALL THAT APPLY) }
 
-7. WHAT FEATURES WOULD IMPROVE YOUR EXPERIENCE? (SELECT ALL THAT APPLY)
+Job search filters
 
-Auto-filling application from résumé
+Application submission
 
-Clearer status updates on applications
+Resume upload
 
-More mobile-friendly interface
+Profile updates
 
-Better navigation and editing options
+Application status tracking
 
-\textbf{Additional Comments
+Notifications
+
+Others \\
+
+\textbf{8. IF YOU HAVE SELECTED OTHERS, PLEASE SPECIFY BELOW
 }
 
-8. IF YOU COULD CHANGE ONE THING ABOUT WORKDAY’S APPLICATION PROCESS, WHAT WOULD IT BE?
+\textbf{9. HOW SATISFIED ARE YOU WITH THE OVERALL EASE OF USING WORKDAY?}
 
+Very satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very dissatisfied \\
+
+\textbf{10. HAVE YOU ENCOUNTERED ANY OF THE FOLLOWING CHALLENGES WHEN WORKING WITH WORKDAY? (SELECT ALL THAT APPLY)
+}
+
+Difficulty finding jobs of interests
+
+Difficulty uploading documents (resume, cover letters, etc.)
+
+Confusion navigating the app interface (for example difficulty in going back, etc …)
+
+Slow response/loading times
+
+Session expiration issues
+
+Lack of clear instructions or guidance
+
+Errors or bugs when applying for jobs
+
+Inconsistent application status notifications or updates
+
+Editing an application
+
+Others \\
+
+\textbf{11. IF YOU HAVE SELECTED OTHERS OR WISH TO PROVIDE ADDITIONAL INFORMATION, PLEASE SPECIFY BELOW} 
+
+\textbf{12. HOW FREQUENTLY DO YOU ENCOUNTER TECHNICAL ISSUES WHEN USING WORKDAY? 
+}
+
+Very Frequently
+Frequently
+
+Occasionally
+
+Rarely
+
+Never \\
+
+\textbf{13. IF APPLICABLE, DESCRIBE ANY INSTANCES WHEN YOU HAVE ABANDONED A JOB APPLICATION THROUGH WORKDAY DUE TO ITS COMPLEXITY OR TECHNICAL ISSUES 
+}
+
+\underline{\textbf{Suggestions for improvement }}
+
+\textbf{14. WHICH FEATURES WOULD YOU LIKE TO SEE IMPROVED IN WORKDAY? (SELECT ALL THAT APPLY)
+}
+
+Job search functionality
+
+Uploading functionality
+
+Instructions on how to use Workday
+
+Navigation options
+
+Auto-filling application from résumé  
+
+Application status updates 
+
+Mobile-friendly interface
+
+Updates and notifications
+
+Editing options 
+
+Others \\
+
+\textbf{15. IF YOU HAVE SELECTED OTHERS OR WISH TO PROVIDE ADDITIONAL INFORMATION, , PLEASE SPECIFY BELOW}
+
+\textbf{16. PLEASE PROVIDE ANY ADDITIONAL COMMENT OR FEEDBACK BELOW	
+}
 \hfill \break
 \hfill \break
 \textbf{3. Heuristic Evaluation}
