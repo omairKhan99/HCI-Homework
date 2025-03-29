@@ -111,10 +111,10 @@ Our heuristic evaluation confirmed many of the usability issues identified in th
 
 \section{Appendix}
 \subsection{Appendix A: Needfinding Plan}
-\subsubsection{Research Approach}
+
 Our needfinding strategy is designed to comprehensively understand the job application experience through three complementary research methods:
 
-\textbf{1. User Interviews}
+\subsubsection{1. User Interviews}
 \begin{itemize}
 \item Target Participants: 5 individuals across different career stages
 \item Duration: 20 minutes per interview
@@ -122,7 +122,7 @@ Our needfinding strategy is designed to comprehensively understand the job appli
 \end{itemize}
 \hfill \break
 
-\textbf{2. Online Survey}
+\subsubsection{2. Online Survey}
 Introduction for Survey Participants:
 Thank you for participating in our survey! We are conducting research on job application experiences, specifically focusing on Workday. Your responses will help us identify common frustrations and potential improvements. The survey should take about 10 minutes to complete.
 
@@ -326,34 +326,49 @@ Others \\
 }
 \hfill \break
 \hfill \break
-\textbf{3. Heuristic Evaluation}
+\subsubsection{3. Heuristic Evaluation}
+
+\textbf{Methodology}  
+
+To systematically assess the usability of the Workday job application interface, we conducted a heuristic evaluation using Jakob Nielsen’s usability heuristics. Each evaluator independently reviewed the application process while documenting instances of usability violations and inefficiencies. The evaluation was conducted across different devices (desktop and mobile) to identify platform-specific issues. The results were then consolidated into key findings based on common themes.  
+
+\textbf{Evaluation Criteria and Observations}  
 
 \begin{itemize}
-\item Methodology: Systematic review of Workday interface
-\item Evaluation Criteria:
+    \item \textbf{Visibility of System Status}  
+    \begin{itemize}
+        \item The interface often lacks clear feedback after user actions. For instance, after submitting an application, there is no immediate confirmation, leaving users uncertain about whether their application was received.
+        \item The status of applications is often vague or hidden under multiple navigation layers, making it difficult for users to track their progress.
+    \end{itemize}
 
-Visibility of system status
+    \item \textbf{User Control and Freedom}  
+    \begin{itemize}
+        \item Users lack the ability to edit their application after submission, forcing them to restart the entire process if they notice an error.
+        \item Navigation between application sections is cumbersome, with no clear way to return to previous sections without losing progress.
+    \end{itemize}
 
-User control and freedom
+    \item \textbf{Consistency and Standards}  
+    \begin{itemize}
+        \item Different companies using Workday have varying interface layouts and application flows, leading to inconsistencies and confusion for repeat users.
+        \item Icons and buttons sometimes lack uniformity in design and placement, making the interface feel disjointed.
+    \end{itemize}
 
-Consistency and standards
+    \item \textbf{Match Between System and Real-World Expectations}  
+    \begin{itemize}
+        \item Users expect that uploading a résumé will auto-fill job history fields, but Workday often requires manual re-entry of the same information.
+        \item The terminology used in error messages and instructions is sometimes unclear, requiring users to guess at corrective actions.
+    \end{itemize}
 
-Match between system and real-world expectations 
-
-Error prevention 
-
+    \item \textbf{Error Prevention}  
+    \begin{itemize}
+        \item Many users experience session timeouts without warning, resulting in lost progress and frustration.
+        \item Form validation is weak, allowing users to proceed with incomplete or incorrectly formatted fields, only to encounter an error message later in the process.
+    \end{itemize}
 \end{itemize}
-\hfill \break
-\hfill \break
 
+\textbf{Conclusion}  
 
-\textbf{Bias Mitigation Strategy}
-
-Cross-validation through multiple research methods
-
-Diverse participant recruitment
-
-Transparent documentation of potential methodological limitations
+Our heuristic evaluation revealed multiple usability flaws in Workday’s job application system, particularly in feedback mechanisms, navigation, and error handling. The findings from this evaluation will directly inform our redesign approach, prioritizing improvements in application transparency, user control, and streamlined workflows.
 
 \newpage
 
