@@ -1,0 +1,584 @@
+\documentclass[
+	%a4paper, % Use A4 paper size
+	letterpaper, % Use US letter paper size
+]{jdf}
+
+\addbibresource{references.bib}
+
+\author{Omair Tariq Khan, Danyal Ahmed, Atul Dhingra, Alice Maria Giani, Varun Basavaraj Kiragi}
+\email{okhan60@gatech.edu, danyal@gatech.edu, adhingra43@gatech.edu , agiani3@gatech.edu, vkiragi3@gatech.edu}
+\title{Team Project Check-in 2 \textbf{(starts page 7)} \underline{\textbf{(YOU-ARE-NOT-YOUR-USER)}}}
+
+
+\begin{document}
+%\lsstyle
+
+\maketitle
+\hfill \break
+\hfill \break
+
+\section{Introduction \underline{(START OF CHECK-IN 1)}}
+In today's rapidly evolving job market, the process of searching and applying for job opportunities has become increasingly complex and digitalized. Job seekers now routinely utilize online job portals, professional networking platforms, social media, and dedicated recruitment applications to identify potential career opportunities. This shift has increased accessibility and enabled individuals to explore a broader range of job options irrespective of geographical limitations. However, this digitalization has also introduced new complexities, with job seekers needing to monitor and apply through several different platforms, craft tailored digital resumes and profiles, and navigate algorithm-driven job recommendation systems.
+
+Additionally, given the competitive nature of the contemporary job market, job seekers need to differentiate themselves from the other numerous applicants. Online platforms often involve automated screening processes that prioritize specific keywords, qualifications, and experiences, making it essential for candidates to understand these underlying selection mechanisms to maximize their visibility and chances of being shortlisted. Furthermore, the prevalence of virtual interviews and remote hiring practices has become increasingly common, requiring job seekers to develop additional competencies in digital communication and online presentation skills.
+
+Among this extensive landscape of digital employment platforms aimed to streamline recruitment processes and simplify job applications and candidates selection, one popular app is Workday. Workday is a cloud-based software designed to integrate human resources and financial management processes, making it popular across several industries and widely used by companies. The app allows users to explore job opportunities, track multiple job applications, and manage their career data using a single app thanks to its comprehensive integration capabilities. Additionally, Workday ensures real-time updates and secure handling of sensitive data and personal information through advanced encryption and compliance with privacy standards. Not withstanding its positive features, Workday is often criticized for being counterintuitive, frustrating, and cumbersome for job seekers. Our project aims to reimagine and improve the Workday job application experience, making it more user-friendly, efficient, and responsive to the needs of applicants. The current system presents multiple pain points, including difficulties in saving progress, repetitive data entry, poor navigation, and a lack of transparency regarding application status.
+
+Our goal is to redesign the job application process to be more seamless and intuitive. Job seekers should be able to easily apply for positions, track their progress, and receive relevant updates without unnecessary complexity. Many applicants, particularly those applying to multiple positions, experience frustration due to redundancies in form-filling and unclear user flows. Our project seeks to address these issues by identifying key user pain points, analyzing existing solutions, and designing a system that prioritizes efficiency and user satisfaction.
+
+Through needfinding, we will gather insights from real users who have applied for jobs via Workday. We will examine their experiences, identify common frustrations, and use these insights to guide our design improvements. 
+
+\newpage
+
+\section{Needfinding Plan}
+\subsection {User Interviews}
+One of the most effective ways to gather firsthand insights is through direct user interviews. Our goal is to interview at least five individuals who have applied for jobs through Workday. These participants will be recruited through personal networks, online communities, and classmates who have used Workday for job applications. We will conduct 20-minute semi-structured interviews, asking participants about their experiences, challenges, and desired improvements.
+
+Our questions will focus on:
+\begin{itemize}
+    \item The overall ease or difficulty of using Workday for job applications
+    \item The most frustrating aspects of the process
+    \item Any workarounds they have developed to navigate the system
+    \item Features they wish existed to improve their experience
+\end{itemize}
+
+Potential biases in this method include self-selection bias (since only individuals willing to be interviewed will participate) and recall bias (participants may forget specific details). To mitigate these biases, we will ensure diversity in our participant pool and encourage detailed responses by asking follow-up questions.
+\hfill \break
+
+\subsection {Online Survey}
+To complement our interviews, we will deploy an online survey targeting approximately 20 participants. The survey will gather quantitative and qualitative data about job application experiences across various platforms, with a specific focus on Workday.
+The survey will include a mix of multiple-choice and open-ended questions covering:
+\begin{itemize}
+    \item Frequency of job applications
+    \item Platform usability ratings
+    \item Specific pain points in application processes
+    \item Demographic information to contextualize responses
+\end{itemize}
+
+Potential biases in this method include self-reporting bias in interviews and surveys, and Potential interviewer influence. 
+
+\hfill \break
+\subsection{Heuristic Evaluation of Existing Workday Interface}
+In addition to user feedback, we will conduct a heuristic evaluation of Workday’s job application system. Using usability heuristics such as Jakob Nielsen’s ten usability principles, we will systematically analyze the interface to identify usability issues. Three team members will independently evaluate the system and then compare findings to reduce individual bias.
+
+The heuristics we will focus on include:
+\begin{itemize}
+    \item Visibility of system status (Are users informed about the progress of their application?)
+    \item Match between system and real-world expectations (Does Workday use familiar language and workflows?)
+    \item User control and freedom (Can users easily correct mistakes or navigate backward?)
+    \item Consistency and standards (Are interactions intuitive and consistent?)
+    \item Error prevention (Does Workday prevent common mistakes, such as duplicate applications?)
+\end{itemize}
+A potential bias in heuristic evaluation is subjectivity, as different evaluators may perceive issues differently. To counter this, we will discuss findings collectively and highlight only those issues that multiple evaluators agree on.
+
+\hfill \break
+\newpage
+\section{Needfinding Results }
+After executing our needfinding plan, we gathered valuable insights into the flaws of the Workday job application experience. Below, we summarize the key findings from each method and highlight the most significant takeaways.
+
+\subsection{User Interviews}
+We conducted five interviews with job seekers who have used Workday. Each participant expressed frustrations with the system, particularly regarding redundancy and poor navigation. Specific complaints included:
+\begin{itemize}
+    \item The need to manually enter the same information multiple times, even when uploading a résumé
+    \item Difficulty in saving progress, leading to lost applications when switching devices
+    \item Lack of clear feedback on application status after submission
+\end{itemize}
+\hfill \break
+
+\subsection{Online survey}
+
+We reviewed over 15 online complaints about Workday’s job application system. The most common issues mentioned were:
+\begin{itemize}
+\item Repetitive form-filling that does not respect uploaded résumés
+\item Unclear communication regarding next steps after applying
+\item Frequent login timeouts and session expirations causing lost progress
+\end{itemize}
+
+One user wrote, “I dread seeing ‘Apply with Workday’ on job postings because I know it means spending 30 minutes filling out forms that should be auto-filled.”
+
+One participant mentioned that they often avoid applying for jobs through Workday due to how tedious the process is, preferring alternative platforms where available. Another noted that Workday’s interface is not mobile-friendly, making it frustrating to apply on a phone.
+\hfill \break
+
+\subsection{Heuristic Evaluation}
+Our heuristic evaluation confirmed many of the usability issues identified in the interviews. The main problems included:
+\begin{itemize}
+\item Poor visibility of system status: Users do not receive adequate feedback on the status of their applications.
+\item Inconsistent design: Different companies using Workday customize their portals, leading to a lack of uniformity in the application experience.
+\item Redundancy is a primary frustration. Users strongly dislike entering the same information multiple times. Many expect résumé parsing but find that Workday does not adequately auto-fill fields.
+\end{itemize}
+
+
+\newpage
+
+\section{Initial Brainstorming Plan \underline{(START OF CHECK-IN 2)}}
+Our needfinding phase indicated significant user pain points with Workday's job application redundancy, limited transparency, and inadequate session management. Based on these insights, we planned a hybrid team brainstorming approach with two phases: asynchronous individual brainstorming followed by synchronous group discussion.
+
+We will conduct a two-phase brainstorming process: First, we'll conduct individual ideation sessions where each team member generates ideas independently based on the needfinding insights. This approach helps mitigate groupthink by ensuring ideas are developed without immediate influence from others. Each member will document their ideas using a shared digital whiteboard, categorizing them according to the key pain points identified: redundant data entry, poor system visibility, inconsistent design, and mobile usability issues.
+
+For the second stage, we'll conduct a synchronous group session using the "How Might We" framework to reframe problems as opportunities. We'll use prompts such as "How might we eliminate redundant data entry?" and "How might we improve application status visibility?" This technique encourages solution-oriented thinking rather than dwelling on problems. To mitigate anchoring bias, we'll rotate which team member presents their ideas first for each problem category.
+
+
+\hfill \break
+\newpage
+\section{Brainstorming Results}
+Our brainstorming session resulted in a range of ideas focused on improving the Workday job application experience. These ideas clustered around four main themes that aligned with our needfinding insights. The first theme centered on streamlining data entry, with ideas ranging from implementing AI-powered resume parsing to creating a universal Workday profile that persists across different employer instances. The second theme focused on improving transparency in the application process, including alerts for incomplete applications, upcoming deadlines, and interview schedules. The third theme addressed user interface consistency, proposing standardized design patterns and adaptive interfaces that maintain familiarity across different employer implementations. The fourth theme concentrated on improving the mobile experience and allowing users to save progress offline. From our pool of concepts, we selected three design alternatives to advance to the prototyping stage.
+
+\subsection{Smart Profile}
+The first is "Smart Profile," a centralized profile system that intelligently parses resume data and maintains user information across Workday instances. This directly addresses the frustration with redundant data entry that dominated our survey responses. Smart Profile envisions a system where users create a comprehensive profile once, which automatically populates application fields across all Workday instances. It incorporates machine learning to improve parsing accuracy over time and includes version control for different resume types. 
+
+\subsection{Interactive Application Dashboard}
+The second is the "Interactive Application Dashboard," a centralized hub where users can track applications, receive recommendations, and view upcoming interviews. It addresses the fragmented nature of the current Workday experience, which emerged as a key frustration in our need finding. Interactive Application Dashboard consolidates all application-related activities into a single, customizable interface where users can monitor application statuses, receive personalized job recommendations based on their profile and application history, and manage upcoming interviews or assessment tasks. This creates a cohesive experience that addresses the disjointed nature of the current system.
+
+\subsection{Prototype 3}
+
+\newpage
+
+\section{Initial Prototyping}
+\subsection{Smart Profile Prototype}
+Our Smart Profile prototype addresses the widespread frustration with redundant data entry in Workday applications. The core feature is an intelligent resume parser that extracts detailed information from uploaded documents and maintains this data across employer instances.
+The prototype presents a clean, intuitive interface with a prominent "Upload Resume" button at the center of the main profile page. Once a resume is uploaded, the system displays a visual representation of the parsing process, showing which sections are being analyzed (contact information, work experience, education, skills) with real-time progress indicators. After parsing completes, users are presented with their pre-filled profile, organized into collapsible sections that follow a logical hierarchy based on application importance.
+
+The Smart Profile prototype leverages principles of recognition over recall by maintaining user data across sessions, reducing cognitive load when completing multiple applications. The design implements a clear visual hierarchy, with the most important actions (resume upload) prominently featured in a highlighted section. We incorporated progress indicators that show which profile sections are complete, providing immediate system status feedback.
+
+The prototype addresses key usability heuristics identified in our needfinding. For instance, it solves the match between system and real world by intelligently parsing resume data into the appropriate fields, conforming to users' mental models. It also provides clear error prevention by validating information as it's entered and highlighting potential discrepancies between parsed resume data and existing profile information.
+
+A particularly innovative feature is the version control system that allows users to maintain different profile versions for different job types, addressing the contextual nature of job applications highlighted in our interviews. The prototype includes a confidence indicator for parsed fields, allowing users to quickly identify and correct any parsing errors. The system also offers "smart suggestions" for improving profile completeness based on typical requirements for the user's target job categories.
+
+The design incorporates a "privacy manager" feature where users can control which aspects of their universal profile are shared with specific employers, addressing privacy concerns raised during our needfinding interviews. Each section has clear edit controls with inline validation that provides immediate feedback, reducing form submission errors. The interface employs consistent visual design patterns throughout to establish a sense of familiarity and reduce learning curve—a direct response to the inconsistency issues identified in our heuristic evaluation.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.1\linewidth]{Smart_Profile.jpg}
+    \caption{Smart Profile}
+    \label{fig:enter-label}
+\end{figure}
+
+\newpage
+
+\subsection{Interactive Application Dashboard Prototype}
+The Interactive Application Dashboard prototype creates a centralized command center for job seekers, consolidating all application activities into a cohesive, personalized interface. This prototype directly addresses the fragmented experience cited by our survey respondents and all interview participants.
+
+The dashboard employs a customizable grid layout with widget-like components that users can arrange according to their preferences. By default, it displays four primary sections: Active Applications, Recommended Jobs, Upcoming Tasks, and Recent Activity. Each section is visually distinct yet follows consistent design patterns, creating a unified experience that addresses the inconsistency issues identified in our heuristic evaluation.
+
+The Active Applications section presents a card-based overview of all ongoing applications, with color-coded status indicators and prominently displayed upcoming deadlines or required actions. Each application card includes a miniature version of the Application Compass timeline, giving users an immediate understanding of their progress without requiring navigation to another screen. This implementation of the visibility of system status heuristic provides quick feedback on where users stand across multiple applications.
+
+The Recommended Jobs section uses intelligent matching algorithms based on the user's profile, application history, and stated preferences to suggest relevant opportunities. Each recommendation includes a "match percentage" with a brief explanation of why it was suggested, creating transparency in the recommendation process. This feature directly addresses feedback from our needfinding where some of our respondents expressed frustration with irrelevant job recommendations.
+
+The Upcoming Tasks section aggregates time-sensitive actions across all applications, such as scheduled interviews, assessments, or follow-up deadlines. Each task includes context about the related application and offers quick access to preparation resources. This implementation of the recognition over recall heuristic ensures users don't miss important deadlines due to the distributed nature of multiple applications.
+
+The Recent Activity section provides a chronological feed of application updates, employer communications, and system notifications. This creates a comprehensive audit trail that helps users maintain awareness of their application landscape without having to check multiple sources—addressing the "black hole" feeling reported by many participants in our needfinding.
+
+The dashboard incorporates contextual actions throughout the interface that change based on application status. For example, when an interview is scheduled, the system automatically offers calendar integration, preparation resources, and company research materials. This context-sensitivity creates a proactive system that anticipates user needs rather than requiring them to seek out information—directly addressing the lack of guidance cited in our survey responses.
+
+A standout feature is the analytics panel that provides insights on application patterns, success rates across different job types, and comparative metrics with anonymized data from other job seekers. This data-driven approach empowers users with actionable information about their job search, addressing the feedback in our interviews that many users feel they're "applying blindly" without understanding effective strategies. The entire dashboard employs responsive design principles that maintain functionality across devices while optimizing the layout for different screen sizes. On mobile devices, the sections transform into a tabbed interface with critical notifications always visible, ensuring important updates aren't missed when using smaller screens—addressing the mobile usability concerns highlighted in our needfinding.
+\newpage
+\subsection{Prototype 3}
+
+\newpage
+\section{Appendix}
+\subsection{Appendix A: Needfinding Plan}
+
+Our needfinding strategy is designed to comprehensively understand the job application experience through three complementary research methods:
+
+\subsubsection{1. User Interviews}
+\begin{itemize}
+\item Target Participants: 5 individuals across different career stages
+\item Duration: 20 minutes per interview
+\item Focus Areas: Emotional experiences during job applications, Specific challenges in online application processes, Desired features and improvements
+\end{itemize}
+\hfill \break
+
+\subsubsection{2. Online Survey}
+Introduction for Survey Participants:
+Thank you for participating in our survey! We are conducting research on job application experiences, specifically focusing on Workday. Your responses will help us identify common frustrations and potential improvements. The survey should take about 10 minutes to complete.
+
+\underline{\textbf{Demographics \& Background}}
+
+\textbf{1. SELECT YOUR AGE:}
+
+18-29
+
+30-39
+
+40-49
+
+50-64
+
+65+
+
+\hfill \break
+
+\textbf{2. WHAT IS YOUR CURRENT EMPLOYMENT STATUS?}
+
+Employed full-time
+
+Employed part-time
+
+Unemployed (seeking employment)
+
+Unemployed (not seeking employment)
+
+Student (seeking employment)
+
+Student (not seeking employment)
+
+Retired
+
+
+\underline{\textbf{Usage  }}
+
+\textbf{3. WHAT TYPE OF JOB(S) HAVE YOU APPLIED TO USING WORKDAY APP? (CHECK ALL THAT APPLY)
+}
+
+Internship
+
+Entry-level
+
+Mid-level
+
+Senior-level
+
+Executive roles \\
+
+
+
+\textbf{4. WHEN SEARCHING FOR A JOB, HOW OFTEN DO YOU USE WORKDAY APP FOR JOB SEARCH AND APPLICATIONS?
+}
+
+Several times a day
+
+Daily
+
+More than 4 time per week
+
+At least 2 times per week
+
+Weekly
+
+Monthly
+
+Rarely
+
+Never			
+\\
+
+\underline{\textbf{Application Experience  }}
+
+\textbf{5. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE OF SEARCHING FOR JOBS  USING WORKDAY APP?}
+
+Very satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very dissatisfied \\
+
+
+
+\textbf{6. HOW WOULD YOU RATE YOUR OVERALL EXPERIENCE OF APPLYING TO JOBS THROUGH WORKDAY?}
+
+Very satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very dissatisfied \\
+
+\textbf{7. WHAT FEATURES OF WORKDAY DO YOU USE FOR JOB SEARCHES AND APPLICATIONS? (SELECT ALL THAT APPLY) }
+
+Job search filters
+
+Application submission
+
+Resume upload
+
+Profile updates
+
+Application status tracking
+
+Notifications
+
+Others \\
+
+\textbf{8. IF YOU HAVE SELECTED OTHERS, PLEASE SPECIFY BELOW
+}
+
+\textbf{9. HOW SATISFIED ARE YOU WITH THE OVERALL EASE OF USING WORKDAY?}
+
+Very satisfied
+
+Satisfied
+
+Neutral
+
+Dissatisfied
+
+Very dissatisfied \\
+
+\textbf{10. HAVE YOU ENCOUNTERED ANY OF THE FOLLOWING CHALLENGES WHEN WORKING WITH WORKDAY? (SELECT ALL THAT APPLY)
+}
+
+Difficulty finding jobs of interests
+
+Difficulty uploading documents (resume, cover letters, etc.)
+
+Confusion navigating the app interface (for example difficulty in going back, etc …)
+
+Slow response/loading times
+
+Session expiration issues
+
+Lack of clear instructions or guidance
+
+Errors or bugs when applying for jobs
+
+Inconsistent application status notifications or updates
+
+Editing an application
+
+Others \\
+
+\textbf{11. IF YOU HAVE SELECTED OTHERS OR WISH TO PROVIDE ADDITIONAL INFORMATION, PLEASE SPECIFY BELOW} 
+
+\textbf{12. HOW FREQUENTLY DO YOU ENCOUNTER TECHNICAL ISSUES WHEN USING WORKDAY? 
+}
+
+Very Frequently
+Frequently
+
+Occasionally
+
+Rarely
+
+Never \\
+
+\textbf{13. IF APPLICABLE, DESCRIBE ANY INSTANCES WHEN YOU HAVE ABANDONED A JOB APPLICATION THROUGH WORKDAY DUE TO ITS COMPLEXITY OR TECHNICAL ISSUES 
+}
+
+\underline{\textbf{Suggestions for improvement }}
+
+\textbf{14. WHICH FEATURES WOULD YOU LIKE TO SEE IMPROVED IN WORKDAY? (SELECT ALL THAT APPLY)
+}
+
+Job search functionality
+
+Uploading functionality
+
+Instructions on how to use Workday
+
+Navigation options
+
+Auto-filling application from résumé  
+
+Application status updates 
+
+Mobile-friendly interface
+
+Updates and notifications
+
+Editing options 
+
+Others \\
+
+\textbf{15. IF YOU HAVE SELECTED OTHERS OR WISH TO PROVIDE ADDITIONAL INFORMATION, , PLEASE SPECIFY BELOW}
+
+\textbf{16. PLEASE PROVIDE ANY ADDITIONAL COMMENT OR FEEDBACK BELOW	
+}
+\hfill \break
+\hfill \break
+\subsubsection{3. Heuristic Evaluation}
+
+\textbf{Methodology}  
+
+To systematically assess the usability of the Workday job application interface, we conducted a heuristic evaluation using Jakob Nielsen’s usability heuristics. Each evaluator independently reviewed the application process while documenting instances of usability violations and inefficiencies. The evaluation was conducted across different devices (desktop and mobile) to identify platform-specific issues. The results were then consolidated into key findings based on common themes.  
+
+\textbf{Evaluation Criteria and Observations}  
+
+\begin{itemize}
+    \item \textbf{Visibility of System Status}  
+    \begin{itemize}
+        \item The interface often lacks clear feedback after user actions. For instance, after submitting an application, there is no immediate confirmation, leaving users uncertain about whether their application was received.
+        \item The status of applications is often vague or hidden under multiple navigation layers, making it difficult for users to track their progress.
+    \end{itemize}
+
+    \item \textbf{User Control and Freedom}  
+    \begin{itemize}
+        \item Users lack the ability to edit their application after submission, forcing them to restart the entire process if they notice an error.
+        \item Navigation between application sections is cumbersome, with no clear way to return to previous sections without losing progress.
+    \end{itemize}
+
+    \item \textbf{Consistency and Standards}  
+    \begin{itemize}
+        \item Different companies using Workday have varying interface layouts and application flows, leading to inconsistencies and confusion for repeat users.
+        \item Icons and buttons sometimes lack uniformity in design and placement, making the interface feel disjointed.
+    \end{itemize}
+
+    \item \textbf{Match Between System and Real-World Expectations}  
+    \begin{itemize}
+        \item Users expect that uploading a résumé will auto-fill job history fields, but Workday often requires manual re-entry of the same information.
+        \item The terminology used in error messages and instructions is sometimes unclear, requiring users to guess at corrective actions.
+    \end{itemize}
+
+    \item \textbf{Error Prevention}  
+    \begin{itemize}
+        \item Many users experience session timeouts without warning, resulting in lost progress and frustration.
+        \item Form validation is weak, allowing users to proceed with incomplete or incorrectly formatted fields, only to encounter an error message later in the process.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Conclusion}  
+
+Our heuristic evaluation revealed multiple usability flaws in Workday’s job application system, particularly in feedback mechanisms, navigation, and error handling. The findings from this evaluation will directly inform our redesign approach, prioritizing improvements in application transparency, user control, and streamlined workflows.
+
+\newpage
+
+\subsection{Appendix B: Needfinding Results}
+
+\subsubsection*{Interview Summaries}  
+
+We conducted interviews with job seekers who have used Workday for job applications. Below are summarized insights from three participants:  
+
+\textbf{Participant 1:}  
+\begin{itemize}  
+    \item Applied for multiple jobs through Workday and finds it time-consuming.  
+    \item Expressed frustration over entering work experience manually despite uploading a résumé.  
+    \item Feels lost after applying—does not receive clear feedback on application status.  
+\end{itemize}  
+
+\textbf{Participant 2:}  
+\begin{itemize}  
+    \item Avoids jobs that use Workday due to past negative experiences.  
+    \item Finds the mobile experience particularly frustrating.  
+    \item Wishes Workday had a dashboard to track all applications in one place.  
+\end{itemize}  
+
+\textbf{Participant 3:}  
+\begin{itemize}  
+    \item Has applied to both internships and full-time jobs through Workday.  
+    \item Notices inconsistencies between different company portals, making navigation confusing.  
+    \item Often gets logged out unexpectedly, losing progress.  
+\end{itemize}  
+\hfill \break  
+
+\subsubsection*{Heuristic Evaluation Notes}  
+
+Our team conducted a heuristic evaluation of Workday’s job application system. The following usability issues were identified:   
+
+\textbf{Visibility of System Status}  
+\begin{itemize}  
+    \item No clear confirmation after application submission; users often unsure if their application was received.  
+    \item No estimated timeline for review or next steps.  
+\end{itemize}   
+
+\textbf{Match Between System and Real-World Expectations}  
+\begin{itemize}  
+    \item Users expect résumé parsing to auto-fill information but must enter details manually.  
+    \item Application flow does not follow a logical sequence (e.g., references before basic details).  
+\end{itemize}  
+
+
+\textbf{User Control and Freedom}  
+\begin{itemize}  
+    \item No way to edit the application after submission.  
+    \item Poor navigation makes it hard to backtrack and correct mistakes.  
+\end{itemize}   
+
+\textbf{Consistency and Standards}  
+\begin{itemize}  
+    \item Workday portals vary across companies, creating an inconsistent experience.  
+    \item Some fields require unnecessary details, while others provide too little guidance.  
+\end{itemize}  
+
+\textbf{Error Prevention}  
+\begin{itemize}  
+    \item Users often time out due to inactivity, leading to lost progress.  
+    \item No warning prompts before submitting an incomplete application.  
+\end{itemize}   
+
+\subsubsection*{Online Reviews Analysis}  
+
+We analyzed over 15 online complaints from forums and review sites. The most common themes included:  
+
+\textbf{Repetitive Data Entry}  
+\begin{itemize}  
+    \item Many users expressed frustration about entering résumé information multiple times.  
+\end{itemize}   
+
+\textbf{Lack of Transparency}  
+\begin{itemize}  
+    \item Candidates often feel their applications disappear into a "black hole" with no updates.  
+\end{itemize}   
+
+\textbf{Mobile Usability Issues}  
+\begin{itemize}  
+    \item Many users struggle to apply via mobile due to formatting and login issues.  
+\end{itemize}  
+
+\textbf{Inconsistent Company Portals}  
+\begin{itemize}  
+    \item Differences between Workday implementations across employers add to user confusion.  
+\end{itemize}  
+
+
+\subsection{Appendix C: Brainstorming Results - Raw Ideas}
+
+1. AI-powered resume parser with machine learning improvements
+
+2. Universal Workday profile that persists across employers
+
+3. LinkedIn integration for automatic profile population
+
+4. Template-based profile versions for different job types
+
+5. One-click apply with minimal required fields
+
+6. Contextual auto-completion based on past applications
+
+7. Profile completeness indicator with targeted suggestions
+
+8. Bulk application feature with personalization options
+
+9. "What happens next" predictive guidance
+
+\hfill \break
+\subsection{Appendix D: Smart Profile}
+ 
+\begin{itemize}
+    \item \textbf{Intelligent Resume Parsing:} The system extracts key details from uploaded resumes, including contact information, work experience, education, and skills, using machine learning to improve accuracy over time.
+    
+    \item \textbf{Persistent User Profile:} Users create a single comprehensive profile that automatically populates application fields across all Workday instances, reducing redundant data entry.
+    
+    \item \textbf{Version Control for Job Types:} The profile supports multiple versions tailored for different job applications, allowing users to switch between profiles optimized for various industries or roles.
+    
+    \item \textbf{Real-time Progress and Validation:} Parsing results are displayed with confidence indicators, and inline validation highlights discrepancies, ensuring data accuracy before submission.
+    
+    \item \textbf{Smart Suggestions for Profile Completeness:} The system recommends missing details based on industry standards and target job requirements, helping users create a stronger application profile.
+    
+    \item \textbf{Privacy Manager:} Users can control which portions of their profile are visible to different employers, addressing privacy concerns while maintaining application flexibility.
+    
+    \item \textbf{Consistent and Intuitive UI:} A clean visual hierarchy, collapsible sections, and highlighted primary actions reduce cognitive load and improve usability, ensuring a seamless experience.
+\end{itemize}
+
+\hfill \break
+\subsection{Appendix E: Interactive Application Dashboard}
+\begin{itemize}
+    \item \textbf{Centralized Application Tracking:} The dashboard consolidates all job applications into a single interface, presenting active applications with color-coded status indicators and deadlines for quick progress tracking.
+    
+    \item \textbf{Customizable Grid Layout:} Users can arrange widget-like sections such as Active Applications, Recommended Jobs, Upcoming Tasks, and Recent Activity to personalize their job search experience.
+    
+    \item \textbf{Intelligent Job Recommendations:} A smart matching algorithm suggests relevant job opportunities based on profile data and application history, displaying a “match percentage” with transparent explanations.
+    
+    \item \textbf{Proactive Task Management:} Upcoming interviews, assessments, and application deadlines are aggregated into a dedicated section, with quick access to preparation resources and calendar integration.
+    
+    \item \textbf{Application Analytics Panel:} Users receive insights on job search patterns, success rates, and comparative data from anonymized job seekers, helping them refine their application strategies.
+    
+    \item \textbf{Responsive Multi-Device Design:} The dashboard adapts to different screen sizes, transforming into a tabbed interface on mobile devices to ensure critical notifications remain accessible.
+\end{itemize}
+
+\end{document}
