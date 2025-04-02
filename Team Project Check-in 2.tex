@@ -5,7 +5,7 @@
 
 \addbibresource{references.bib}
 
-\author{Omair Tariq Khan, Danyal Ahmed, Atul Dhingra, Alice Maria Giani, Varun Basavaraj Kiragi}
+\author{Omair Tariq Khan, Danyal Ahmad, Atul Dhingra, Alice Maria Giani, Varun Basavaraj Kiragi}
 \email{okhan60@gatech.edu, danyal@gatech.edu, adhingra43@gatech.edu , agiani3@gatech.edu, vkiragi3@gatech.edu}
 \title{Team Project Check-in 2 \textbf{(starts page 7)} \underline{\textbf{(YOU-ARE-NOT-YOUR-USER)}}}
 
@@ -129,12 +129,15 @@ The first is "Smart Profile," a centralized profile system that intelligently pa
 \subsection{Interactive Application Dashboard}
 The second is the "Interactive Application Dashboard," a centralized hub where users can track applications, receive recommendations, and view upcoming interviews. It addresses the fragmented nature of the current Workday experience, which emerged as a key frustration in our need finding. Interactive Application Dashboard consolidates all application-related activities into a single, customizable interface where users can monitor application statuses, receive personalized job recommendations based on their profile and application history, and manage upcoming interviews or assessment tasks. This creates a cohesive experience that addresses the disjointed nature of the current system.
 
-\subsection{Prototype 3}
+\subsection{Smart Application Flow}
+The Smart Application Flow prototype reimagines the traditional job application process by making it more efficient, adaptive, and user-friendly. Rooted in insights from our needfinding research, this design shifts away from the rigid, linear application format in favor of a modular, card-based approach that enhances flexibility. By incorporating auto-save functionality, intelligent field pre-filling, and real-time validation, this prototype eliminates unnecessary friction while maintaining user control. It guides applicants through a seamless, interactive experience, minimizing redundant data entry while ensuring accuracy. This approach combines the best features of the Smart Profile and Interactive Application Dashboard, culminating in a more intuitive and accessible job application system.
 
-\newpage
+\hfill \break
+\hfill \break
+
 
 \section{Initial Prototyping}
-\subsection{Smart Profile Prototype}
+\subsection{Prototype 1: Smart Profile Prototype}
 Our Smart Profile prototype addresses the widespread frustration with redundant data entry in Workday applications. The core feature is an intelligent resume parser that extracts detailed information from uploaded documents and maintains this data across employer instances.
 The prototype presents a clean, intuitive interface with a prominent "Upload Resume" button at the center of the main profile page. Once a resume is uploaded, the system displays a visual representation of the parsing process, showing which sections are being analyzed (contact information, work experience, education, skills) with real-time progress indicators. After parsing completes, users are presented with their pre-filled profile, organized into collapsible sections that follow a logical hierarchy based on application importance.
 
@@ -148,14 +151,14 @@ The design incorporates a "privacy manager" feature where users can control whic
 
 \begin{figure}
     \centering
-    \includegraphics[width=1.1\linewidth]{Smart_Profile.jpg}
+    \includegraphics[width=1.15\linewidth]{Smart Profile Prototype-1.png}
     \caption{Smart Profile}
     \label{fig:enter-label}
 \end{figure}
 
 \newpage
 
-\subsection{Interactive Application Dashboard Prototype}
+\subsection{Prototype 2: Interactive Application Dashboard Prototype}
 The Interactive Application Dashboard prototype creates a centralized command center for job seekers, consolidating all application activities into a cohesive, personalized interface. This prototype directly addresses the fragmented experience cited by our survey respondents and all interview participants.
 
 The dashboard employs a customizable grid layout with widget-like components that users can arrange according to their preferences. By default, it displays four primary sections: Active Applications, Recommended Jobs, Upcoming Tasks, and Recent Activity. Each section is visually distinct yet follows consistent design patterns, creating a unified experience that addresses the inconsistency issues identified in our heuristic evaluation.
@@ -170,9 +173,65 @@ The Recent Activity section provides a chronological feed of application updates
 
 The dashboard incorporates contextual actions throughout the interface that change based on application status. For example, when an interview is scheduled, the system automatically offers calendar integration, preparation resources, and company research materials. This context-sensitivity creates a proactive system that anticipates user needs rather than requiring them to seek out information—directly addressing the lack of guidance cited in our survey responses.
 
-A standout feature is the analytics panel that provides insights on application patterns, success rates across different job types, and comparative metrics with anonymized data from other job seekers. This data-driven approach empowers users with actionable information about their job search, addressing the feedback in our interviews that many users feel they're "applying blindly" without understanding effective strategies. The entire dashboard employs responsive design principles that maintain functionality across devices while optimizing the layout for different screen sizes. On mobile devices, the sections transform into a tabbed interface with critical notifications always visible, ensuring important updates aren't missed when using smaller screens—addressing the mobile usability concerns highlighted in our needfinding.
+A standout feature is the analytics panel that provides insights on application patterns, success rates across different job types, and comparative metrics with anonymized data from other job seekers. This data-driven approach empowers users with actionable information about their job search, addressing the feedback in our interviews that many users feel they're "applying blindly" without understanding effective strategies. The entire dashboard employs responsive design principles that maintain functionality across devices while optimizing the layout for different screen sizes. On mobile devices, the sections transform into a tabbed interface with critical notifications always visible, ensuring important updates aren't missed when using smaller screens, addressing the mobile usability concerns highlighted in our needfinding.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.1\linewidth]{Interactive2.png}
+    \caption{Interactive Dashboard}
+    \label{fig:enter-label}
+\end{figure}
 \newpage
-\subsection{Prototype 3}
+\subsection{Prototype 3: Smart Application Flow}
+
+The Smart Application Flow prototype addresses the inconvenient and inefficient application completion process that is evident from our needfinding research. For this prototype, we started from square one to truly understand how users fill out job applications and transformed it from a linear, cumbersome experience into a seamless, adaptive process.
+
+The core design philosophy of this prototype is a modular, card-based user interface that partitions lengthy application forms into small, palatable sections. The Smart Application Flow presents content in a series of simplified steps. The interface includes a progress indicator that conveys the sections that have been completed and those remaining. Immediate feedback is provided to the user as they progress through the application, fulfilling the 'visibility of system status' heuristic mentioned earlier.
+
+Interactive cards are used to present information to users. The sections can be expanded and collapsed, and users may freely travel between sections without losing progress. The prototype implements auto-save functionality, addressing a recurring pain point mentioned by several participants.
+
+An integral feature of the Smart Application Flow is its contextual awareness. The prototype recognizes the information the user has previously provided in other applications and prefills those fields. An indicator shows the user which fields have already been filled in. Users can review these filled fields and modify as needed, which will then inform the program for future applications. This feature reduces the need for redundant data entry while balancing efficiency and control.
+
+The interface uses dynamic validation to provide users with real-time feedback as they complete fields. Color-based indicators help alert users to issues before submission. Different colors are used to indicate different types of problems; this is to provide the user with additional insight instead of a binary valid/invalid.
+
+The prototype provides intelligence assistance with examples and hints based on the specific role. For example, when filling out the work experience section, the system may suggest using particular terminology in the job description field. This helps align the user's context to the application process.
+
+The "application drafts" feature enables users to save partially complete applications to finish later or use as a template. For example, users may create templates for different roles. This is in response to user feedback detailing the use of different application content based on the position being applied to.
+
+To maximize user accessibility, the prototype implements a responsive design that adapts to the size of the device screen. On smaller screens, the card sections collapse into a vertical stack and adjust their height and width accordingly. This ensures that the interface works just as well on mobile devices.
+
+A 'document locker' feature maintains a secure library of user pre-submitted application documents such as resumes, cover letters, and certificates. The locker maintains version control over these files and allows easy changes. The data from the documents is extracted and analyzed to prefill application sections and provide the user with key insights. The locker also reduces the need to re-upload the same documents for each application, thereby saving storage and network bandwidth.
+
+The interface is built with a consistent design language throughout, with uniform patterns and actions. The consistency is intended to provide users with familiarity and minimize cognitive load from the application process.
+
+The Smart Application Flow prototype integrates many of the insights gained from the Smart Profile and Interactive Application Dashboard prototypes. Combining the two, prototype three inches closer to a well-rounded interface. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.1\linewidth]{SmartFlow1.png}
+    \caption{Interactive Dashboard}
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \section{Appendix}
@@ -579,6 +638,18 @@ We analyzed over 15 online complaints from forums and review sites. The most com
     \item \textbf{Application Analytics Panel:} Users receive insights on job search patterns, success rates, and comparative data from anonymized job seekers, helping them refine their application strategies.
     
     \item \textbf{Responsive Multi-Device Design:} The dashboard adapts to different screen sizes, transforming into a tabbed interface on mobile devices to ensure critical notifications remain accessible.
+\end{itemize}
+
+\hfill \break
+\subsection{Appendix F: Smart Application Flow}
+\begin{itemize}
+    \item \textbf{Modular Card-Based Interface}: Breaks applications into manageable sections with collapsible cards, allowing users to navigate freely while preserving progress.
+    \item \textbf{Auto-Save and Drafts}: Ensures user data is continuously saved, allowing incomplete applications to be resumed later or used as templates for future applications.
+    \item \textbf{Context-Aware Pre-Filling}: Recognizes and auto-fills fields using previously submitted data, reducing redundant entry while maintaining user control.
+    \item \textbf{Real-Time Validation and Feedback}: Uses dynamic validation with color-coded indicators to highlight errors and suggest improvements during form completion.
+    \item \textbf{Intelligent Assistance}: Provides tailored hints and recommendations based on job descriptions to enhance application quality and relevance.
+    \item \textbf{Responsive and Accessible Design}: Adapts to different screen sizes, ensuring usability on mobile and desktop with a consistent user experience.
+    \item \textbf{Secure Document Locker}: Stores resumes, cover letters, and certifications with version control, enabling seamless document retrieval for applications.
 \end{itemize}
 
 \end{document}
