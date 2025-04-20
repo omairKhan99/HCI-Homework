@@ -15,7 +15,12 @@
 
 \maketitle
 \begin{sloppypar}
-\hfill \break
+
+
+\begin{abstract}
+	This project aims to improve the user experience of applying for jobs through the Workday platform by addressing key usability challenges faced by applicants. Current issues include redundant data entry, lack of application status visibility, and inconsistent interface design across employer instances. Using human-centered design principles and iterative evaluation, the project seeks to develop a more intuitive and efficient application process. The goal is to create a solution that streamlines workflows, enhances transparency, and better supports the needs of modern job seekers.
+\end{abstract}
+
 \hfill \break
 
 \section{Introduction \underline{(START OF CHECK-IN 1)}}
@@ -665,9 +670,19 @@ The prototype can be accessed here:
     \url{https://da2853.github.io/You-Are-Not-Your-User/}
 \end{center}
 
+\newpage
+
 \section{Final Evaluation Results}
+We conducted our final usability evaluation with 15 participants, all of whom had experience with applying for jobs using the Workday application. All of our participants interacted with our final prototype in a remote settings. The group included a diverse mix of students and professionals, which helped ensure a good representative sample of our target user base. We designed this evaluation to assess both task performance and subjective usability, while also gathering deeper insights into how well users understood and discovered our new features. After each evaluation session, the participants completed the system usability scale (SUS). The average score for SUS was 85, which gave us an excellent rating and exceeded our expectations. This suggests that the users found our final prototype very usable, intuitive, and efficient for completing job applications and other related tasks. Participants responded very positively to nearly every feature. Users liked the ability to progress through the job application at their own pace, and did not feel overwhelmed by having too much content on the screen at once. The clean and simple user interface allowed the users to revisit and revise sections without losing their place, which was a common frustration that users had with the original Workday interface. The card flow system was particularly well-received. The users appreciated the ability to jump between sections without fear of losing progress, and the auto-save confirmation indicator was useful, and helped reassure them that their work was being preserved in a real-life scenario. Below is a figure that shows all of the completion time, error rates, and friction points across the three core tasks. None of the users failed any of the tasks, and the error rates were relatively minimal. The only recurring issue came up during the resume review, where some of the participants felt a little confused about which fields were editable after using the auto-fill feature.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{Screenshot 2025-04-15 at 4.49.07 PM.png}
+    \caption{Findings}
+    \label{fig:enter-label}
+\end{figure}
 
 
+Beyond the numerical data, we conducted some post-session interviews and analyzed the written feedback. The participants responses consistently reinforced the strengths of our design while still revealing some small areas for future improvement. Some of the participants said that breaking up the application process into smaller portions made the process less overwhelming and easier to digest. This feedback supports one of the core design goals we had in this project, which was to reduce cognitive overload by avoiding long, cluttered, and unaesthetic forms. The visual consistency across sections also contributed to smoother navigation. By using similar layout patterns and button placements throughout the prototype, users could predict interactions even when encountering a new feature for the first time. We also noticed that users quickly picked up on the navigation breadcrumbs, which were placed at the top of each section to provide context and help them understand where they were in the process. Instead of feeling burdened by having long forms that were not visually pleasing, the users said that the smaller steps made it easier to stay more motivated to complete all of the sections. The participants who used the resume enhancement tool also said it would be a useful feature. Many also appreciated seeing an indicator or "last saved" message during the application process. The document locker idea was also well received. Moving onto some future improvement suggestions, although most of the visuals were an improvement over the regular Workday application and the earlier iterations, some users still felt a little confused on what was required to fill out and what was optional. One participant noted that the progressive disclosure of content helped them stay focused on the current task. This was an unanticipated but encouraging sign that our interface could be more inclusive by design. We also received comments from users with different interface preferences, and received mentions that the step-by-step flow helped them stay on task more effectively. In addition to functional praise, several participants described the interface as calming and less intimidating than typical job portals. The balance between minimalism and control appeared to reduce user anxiety, especially when navigating through multiple form fields. One participant mentioned that they found the application process even somewhat enjoyable. Another participant mentioned that they appreciated the clean visual spacing and high contrast of the prototype's interface. Another participant suggested adding keyboard shortcuts or a condensed view for users who apply to many jobs in one session. Although this was not part of our current design, it presents an interesting opportunity for future iterations.  Some users also missed the document locker icon, and took them a couple of seconds to figure it out. Users would also prefer if they had a clearer confirmation that some fields had been updated after using the smart suggestions feature. By simulating realistic job application scenarios and having participants speak aloud during the process, we were able to capture not just what they did, but also how they felt. This methodology provided deeper insight into both conscious and subconscious usability issues. We intentionally included a wide variety of tasks, which range from uploading documents to reviewing suggestions to test the breadth of our prototype's utility. These tasks were modeled after common pain points reported in our initial needfinding phase. Our final evaluation gives us strong evidence that our design meaningfully improves the Workday job application experience. From further streamlining workflows to reducing friction points in data entry, our high-fidelity prototype resolved many of the key issues we identified during our earlier need-finding steps. Compared to our early prototpes and participants' experience with the default Workday interface, most users completed tasks noticeably faster and with fewer hiccups, which indicate some improvements in speed and confidence in the user interface. This project reaffirmed the importance of designing not just for task completion, but for user trust, flexibility, and peace of mind. Features like auto-save, version control, and modular flow all worked together to create an interface that felt both modern and easy to use. If we were to continue developing and iterating over this project, our next steps would include a quick and simple on-boarding process to highlight the key features we added in our project, as some participants requested guidance when first using the system. Overall, our final evaluation not only validated our core design decisions but also provided a roadmap for refining this prototype into a fleshed out solution that could be a viable improvement to the Workday platform. This project also demonstrated the value of iterative, evidence-based design. By continually testing and refining based on real user feedback, we were able to build a system that not only addressed known issues but also showed us new opportunities for improvement. 
 
 \newpage
 
@@ -1682,7 +1697,7 @@ Rate your agreement with the following statements (1=Strongly Disagree, 7=Strong
 
 \subsubsubsection*{Sample Recruitment Message}
 \begin{quote}
-Seeking participants for a 15-minute user study on job application interfaces! We are evaluating a new prototype designed to make applying for jobs easier and more efficient. Participants will receive a \$10 gift card for their time. Requirements: must have applied for at least one job online in the past year. To participate, please complete the screening form at [link].
+Seeking participants for a 15-minute user study on job application interfaces! We are evaluating a new prototype designed to make applying for jobs easier and more efficient. Requirements: must have applied for at least one job online in the past year. To participate, please complete the screening form at [link].
 \end{quote}
 
 \subsubsubsection*{Screening Criteria}
@@ -1698,7 +1713,6 @@ Seeking participants for a 15-minute user study on job application interfaces! W
 
 \begin{quote}
 \textbf{Study Title:} Evaluation of Smart Application Flow Interface\\
-\textbf{Researchers:} [Team Names]\\
 \textbf{Purpose:} To evaluate the usability and effectiveness of a new job application interface
 
 \textbf{Procedures:}
@@ -1723,7 +1737,6 @@ Seeking participants for a 15-minute user study on job application interfaces! W
     \item Results will be presented in aggregate form
 \end{itemize}
 
-\textbf{Contact:} [Contact Information]\\
 \textbf{Voluntary Participation:} Your participation is voluntary, and you may withdraw at any time.
 
 I have read and understood the above information and agree to participate in this study.
@@ -1732,6 +1745,128 @@ I have read and understood the above information and agree to participate in thi
 \newpage
 
 \subsection{Appendix K: Final Evaluation Results}
+\subsubsection{K.1 Participant Demographics}
+
+We recruited a total of 15 participants to evaluate our Smart Application Flow 2.0 prototype. All participants had prior experience using Workday, with varying levels of familiarity and application frequency.
+
+\begin{itemize}
+    \item \textbf{Education Level:} 
+    \begin{itemize}
+        \item 9 Graduate Students (Master’s level)
+        \item 6 Undergraduate Students (3rd and 4th year)
+    \end{itemize}
+
+    \item \textbf{Experience with Job Applications:}
+    \begin{itemize}
+        \item 6 actively applying for internships
+        \item 5 actively applying for full-time positions
+        \item 4 casually browsing for jobs or planning future applications
+    \end{itemize}
+
+    \item \textbf{Workday Usage:}
+    \begin{itemize}
+        \item 12 participants used Workday within the last 6 months
+        \item 3 had prior experience more than 1 year ago
+    \end{itemize}
+
+    \item \textbf{Device Usage During Evaluation:}
+    \begin{itemize}
+        \item 8 participants used laptops/desktops
+        \item 7 participants used mobile phones or tablets
+    \end{itemize}
+
+    \item \textbf{Age Range:}
+    \begin{itemize}
+        \item 18–24 years: 10 participants
+        \item 25–34 years: 5 participants
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{K.2 Task Completion Metrics}
+
+Participants were asked to complete three tasks using the prototype. Below are the performance metrics across all participants:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Task} & \textbf{Average Time (sec)} & \textbf{Avg. Errors} & \textbf{Completion Rate} \\
+\hline
+Resume Upload \& Review Auto-Fill (Task 1) & 105.2 & 0.6 & 100\% \\
+Complete Skills Section (Task 2) & 85.4 & 0.2 & 100\% \\
+Navigate Between Sections (Task 3) & 70.3 & 0.3 & 100\% \\
+\hline
+\end{tabular}
+\caption{Task-based performance metrics}
+\end{table}
+
+\textbf{Key Observations:}
+\begin{itemize}
+    \item 4 participants hesitated after auto-filling, unsure which fields were editable
+    \item The document locker was overlooked by 3 participants initially, despite being visible
+    \item All participants completed tasks without needing assistance or external guidance
+\end{itemize}
+
+\subsubsection{K.3 System Usability Scale (SUS)}
+
+\begin{itemize}
+    \item \textbf{Mean SUS Score:} 85.0
+    \item \textbf{Standard Deviation:} 5.9
+    \item \textbf{SUS Score Range:} 75 to 92
+\end{itemize}
+
+According to industry standards, a score above 80.3 is considered “excellent.” 12 out of 15 participants rated the prototype above 80, indicating strong usability and overall satisfaction.
+
+\subsubsection{K.4 Feature-Specific Satisfaction Ratings}
+
+Participants rated several key features on a 7-point Likert scale:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Feature} & \textbf{Mean Score} & \textbf{Standard Deviation} \\
+\hline
+Clarity of required vs. optional fields & 6.0 & 0.7 \\
+Ease of document management & 5.8 & 0.9 \\
+Helpfulness of smart suggestions & 6.1 & 0.6 \\
+Visual layout / spacing & 6.3 & 0.5 \\
+Overall satisfaction & 6.4 & 0.5 \\
+\hline
+\end{tabular}
+\caption{Participant satisfaction with specific features}
+\end{table}
+
+\subsubsection{K.5 Qualitative Insights}
+
+Semi-structured post-session interviews yielded several key themes:
+
+\textbf{Positively Perceived Features}
+\begin{itemize}
+    \item \textbf{Modular Flow:} “The card-style navigation made it less stressful—more bite-sized and less overwhelming.”
+    \item \textbf{Auto-Save Indicator:} “Seeing the ‘last saved’ message gave me peace of mind, especially compared to Workday’s sudden timeouts.”
+    \item \textbf{Resume Parsing Accuracy:} “It got 90\% of my resume right—way better than what I expected.”
+    \item \textbf{Navigation Flow:} “The top breadcrumb trail made it easy to understand where I was at all times.”
+\end{itemize}
+
+\textbf{Pain Points and Suggestions}
+\begin{itemize}
+    \item \textbf{Required vs. Optional Fields:} “I wasn't always sure what I needed to fill in, some stronger labels would help.”
+    \item \textbf{Discoverability of Document Locker:} “Took me a while to find the document locker. Maybe highlight it on first use?”
+    \item \textbf{Advanced Users:} “Would love a ‘condensed view’ or keyboard shortcuts for fast applications.”
+    \item \textbf{Onboarding Prompt:} “Some kind of tooltip walkthrough on first load would be helpful.”
+\end{itemize}
+
+\textbf{General Sentiment}
+\begin{itemize}
+    \item “Honestly, this feels like what Workday should already be.”
+    \item “I would absolutely use this if it were available today.”
+    \item “Clean, non-intimidating, and efficient, that’s rare for job sites.”
+\end{itemize}
+
+\subsubsection{K.6 Summary and Reflection}
+
+The data strongly supports the usability of our Smart Application Flow 2.0 prototype. Quantitative metrics showed high completion rates and satisfaction, while qualitative feedback validated the core design improvements. Remaining suggestions focused on minor clarity and visibility issues, which can be addressed in future iterations. The overall response demonstrated that our redesign meaningfully improves the user experience for job seekers compared to the traditional Workday interface.
 
 
 \end{sloppypar}
